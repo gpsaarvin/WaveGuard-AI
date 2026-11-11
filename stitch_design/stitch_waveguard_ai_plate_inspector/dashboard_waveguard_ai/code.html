@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#132033", "inverse-primary": "#006970", "primary-fixed": "#7df4ff", "on-primary-container": "#006970", "tertiary-container": "#e1d2ff", "outline": "#849495", "error-container": "#93000a", "surface-container-high": "#1d2a3e", "secondary-fixed": "#d8e2ff", "on-secondary": "#002e6b", "primary-fixed-dim": "#00dbe9", "on-tertiary-container": "#6d3bd7", "tertiary-fixed-dim": "#d0bcff", "surface-dim": "#061426", "secondary-fixed-dim": "#aec6ff", "secondary-container": "#508eff", "on-secondary-container": "#00275e", "on-background": "#d6e3fe", "on-surface-variant": "#b9cacb", "on-tertiary": "#3c0091", "on-tertiary-fixed": "#23005c", "on-error-container": "#ffdad6", "primary-container": "#00f0ff", "surface": "#061426", "on-error": "#690005", "surface-variant": "#28354a", "on-tertiary-fixed-variant": "#5516be", "background": "#061426", "surface-container-highest": "#28354a", "on-primary-fixed-variant": "#004f54", "secondary": "#aec6ff", "inverse-on-surface": "#243145", "surface-bright": "#2d3a4e", "on-surface": "#d6e3fe", "error": "ffb4ab", "outline-variant": "#3b494b", "tertiary": "#faf3ff", "on-primary": "#00363a", "primary": "#dbfcff", "surface-container-low": "#0e1c2f", "tertiary-fixed": "#e9ddff", "inverse-surface": "#d6e3fe", "on-primary-fixed": "#002022", "on-secondary-fixed": "#001a43", "surface-tint": "#00dbe9", "surface-container-lowest": "#020e21", "on-secondary-fixed-variant": "#004397" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "1rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "display-lg-mobile": ["Inter"], "display-lg": ["Inter"], "headline-lg": ["Inter"], "label-md": ["JetBrains Mono"], "body-sm": ["Inter"], "label-sm": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between backdrop-blur-xl"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between border-b border-outline-variant/30 bg-surface-container-low/40"><div class="flex items-center gap-space-sm"><img alt="WaveGuard AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAISF6HArFg7tRCBJgQPKhOAxXpCNK_ReKIzVfC33a3FuhDIfVHMez0ZyPLBazsHFVBK4IWPc7EC56xeSB6AsVuu6LDeuZxXtAS1VAXF08Fy7I6tTmHYhr2WOpnyMD9zl83lgTeXJE-isx67zpHWrplIjG4WtpyjleB_3RDvZxlJlPgwStQyNNUMYwGhRquihGiU9acHbwTgz-sGtTWL5YL-bFF9a0YCiBrsxHgImnN"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none">WaveGuard AI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Research Platform</span></div></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim border border-primary-fixed-dim/30 tracking-wider">v2.4</span></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-wider px-space-xs">Aero SHM Modules</span></div><nav class="flex flex-col px-space-xs gap-0.5" data-active-classes="bg-surface-container-high text-primary-container border-l-2 border-primary-container font-medium"><a aria-current="page" class="flex items-center gap-3 px-space-md py-2.5 rounded-lg transition-colors bg-surface-container-high text-primary-container border-l-2 border-primary-container font-medium" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg leading-none">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="plate-visualization" href="#"><span class="material-symbols-outlined text-lg leading-none">layers</span><span>Plate Visualization</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="signal-analysis" href="#"><span class="material-symbols-outlined text-lg leading-none">graphic_eq</span><span>Signal Analysis</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="ai-classification" href="#"><span class="material-symbols-outlined text-lg leading-none">model_training</span><span>AI Classification</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="model-evaluation" href="#"><span class="material-symbols-outlined text-lg leading-none">analytics</span><span>Model Evaluation</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dataset-management" href="#"><span class="material-symbols-outlined text-lg leading-none">dataset</span><span>Dataset Management</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="analysis-history" href="#"><span class="material-symbols-outlined text-lg leading-none">history</span><span>Analysis History</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-lg leading-none">description</span><span>Reports</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-lg leading-none">tune</span><span>Settings</span></a></nav></div><div class="flex flex-col border-t border-outline-variant/30 bg-surface-container-low/60"><div class="p-space-sm mx-space-sm my-space-xs rounded bg-surface-container-lowest border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><span class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>SYS NOMINAL</span><span class="font-label-sm text-label-sm text-primary">PZT SYNC</span></div><div class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between"><span>GPU INFERENCE</span><span class="text-primary-fixed-dim">ONLINE (0.8ms)</span></div></div><div class="px-space-md py-3 flex items-center justify-between border-t border-outline-variant/20"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0e7r93DvGvrBtkrsQv3aqYdi5UUyUubYN6TaWLuSmTjzFAIm57Xzm2npMqrqb1BCnP6zQwjx11KUVX5i2DrjtYlKkoo3eUvuA0IJSI0QrwS5OZEMc4J21aWoRZEfd9x2aCuv0F6NqLi-A4NoPPwZRZO4odP7zLuluqsjG17vLqjEHz_GprL-xvVALxKdIYMobPWuoagmpYXnYr_wElEZXS_50gbJUl-hdKBpUeEQ"/><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-surface font-semibold leading-snug">Dr. A. Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Researcher</span></div></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant border border-outline-variant/40">LAB-04</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary-container text-lg">radar</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-medium">CFRP-T700-Plate-A22</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/10 text-primary-container border border-primary-container/30 uppercase tracking-wider">Guided Wave Active</span></div><div class="hidden xl:flex items-center gap-space-lg px-space-md py-1 rounded bg-surface-container-low border border-outline-variant/20 font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-1.5"><span>FREQ:</span><span class="text-primary font-semibold">250 kHz</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-1.5"><span>FS:</span><span class="text-primary font-semibold">50 MS/s</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-1.5"><span>ACTUATOR:</span><span class="text-primary-fixed-dim font-semibold">PZT-01 DISC</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface text-body-sm font-body-sm border border-outline-variant/40 transition-colors" type="button"><span class="material-symbols-outlined text-base text-primary-fixed-dim leading-none">sensors</span><span>Acquire</span></button><button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-primary-container hover:bg-primary-fixed text-on-primary-container font-medium text-body-sm font-body-sm transition-all shadow-[0_0_12px_rgba(0,240,255,0.25)]" type="button"><span class="material-symbols-outlined text-base leading-none">summarize</span><span>Report</span></button></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="relative p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl leading-none">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex flex-col items-end pl-1 font-label-sm text-label-sm"><span class="text-on-surface leading-tight font-semibold">14:32:08 UTC</span><span class="text-on-surface-variant text-[9px] uppercase tracking-wider">GPS Locked</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full p-gutter-desktop space-y-gutter-desktop">
+<!-- TOP BAR / BREADCRUMB METADATA CLUSTER -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Aero SHM Platform // Telemetry Node 04</span>
+<span class="w-1 h-1 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Real-time Inference Array</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight mt-1 flex items-center gap-space-sm">
+        Diagnostics & Structural Health Matrix
+      </h1>
+</div>
+<!-- Live Status Strip -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-xl shadow-inner">
+<div class="flex items-center gap-2 pr-space-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">SYNCHRONIZED</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>SAMPLING:</span>
+<span class="text-primary font-bold">50 MS/s</span>
+</div>
+<span class="text-outline-variant">/</span>
+<div class="flex items-center gap-1.5 px-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>EXCITATION:</span>
+<span class="text-primary-fixed-dim font-bold">5.5-CYCLE HANNING</span>
+</div>
+</div>
+</div>
+<!-- 1. TOP KEY METRIC CARDS (5 Bento Columns) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-space-md">
+<!-- Card 1: Total Datasets -->
+<div class="group relative overflow-hidden bg-surface-container-low/90 rounded-xl p-space-md shadow-md hover:bg-surface-container transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary-container/5 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Datasets</span>
+<span class="material-symbols-outlined text-primary-fixed-dim text-lg">folder_data</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">148</span>
+<span class="font-label-md text-label-md text-primary-fixed-dim font-medium">Runs</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">+12 this week</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">42 GB HDF5/CSV</span>
+</div>
+<!-- Mini Sparkline SVG -->
+<div class="mt-3 w-full h-7">
+<svg class="w-full h-full text-primary-container" fill="none" viewbox="0 0 100 24">
+<path d="M0 18 L15 15 L30 19 L45 10 L60 14 L75 8 L90 5 L100 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M0 18 L15 15 L30 19 L45 10 L60 14 L75 8 L90 5 L100 2 L100 24 L0 24 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- Card 2: Total Analyses -->
+<div class="group relative overflow-hidden bg-surface-container-low/90 rounded-xl p-space-md shadow-md hover:bg-surface-container transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Analyses</span>
+<span class="material-symbols-outlined text-secondary text-lg">manage_search</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">1,842</span>
+<span class="font-label-md text-label-md text-secondary font-medium">Scans</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Monitoring</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">6 Plates</span>
+</div>
+<div class="mt-3 w-full h-7">
+<svg class="w-full h-full text-secondary" fill="none" viewbox="0 0 100 24">
+<path d="M0 20 L20 18 L40 12 L55 14 L70 6 L85 10 L100 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M0 20 L20 18 L40 12 L55 14 L70 6 L85 10 L100 4 L100 24 L0 24 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- Card 3: Healthy Plate Baseline -->
+<div class="group relative overflow-hidden bg-surface-container-low/90 rounded-xl p-space-md shadow-md hover:bg-surface-container transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Healthy Baseline</span>
+<span class="material-symbols-outlined text-primary text-lg">verified</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">1,394</span>
+<span class="font-label-md text-label-md text-primary font-medium">Intact</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">75.7% Baseline Ratio</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">±0.2% Dev</span>
+</div>
+<div class="mt-3 w-full h-7">
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden mt-3">
+<div class="bg-primary h-full rounded-full" style="width: 75.7%"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Defect Predictions -->
+<div class="group relative overflow-hidden bg-surface-container-low/90 rounded-xl p-space-md shadow-md hover:bg-surface-container transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-error-container/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Defect Predictions</span>
+<span class="material-symbols-outlined text-error text-lg">warning</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-error font-bold tracking-tight">448</span>
+<span class="font-label-md text-label-md text-error font-medium">Identified</span>
+</div>
+<div class="mt-2 flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">312 Delam</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface">98 Crack</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface">38 Impact</span>
+</div>
+<div class="mt-3 w-full h-7 flex gap-1 items-end">
+<div class="h-4/5 w-1/3 bg-error/70 rounded-xs" title="Delaminations"></div>
+<div class="h-2/5 w-1/3 bg-tertiary-fixed-dim/70 rounded-xs" title="Micro-Cracks"></div>
+<div class="h-1/5 w-1/3 bg-secondary-fixed/50 rounded-xs" title="High-Velocity Impact"></div>
+</div>
+</div>
+<!-- Card 5: Benchmark Accuracy -->
+<div class="group relative overflow-hidden bg-surface-container-low/90 rounded-xl p-space-md shadow-md hover:bg-surface-container transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Model Accuracy</span>
+<span class="material-symbols-outlined text-primary-container text-lg">precision_manufacturing</span>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold tracking-tight">98.4%</span>
+<span class="font-label-md text-label-md text-primary font-medium">Acc</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim font-medium">XGBoost-Ensemble</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">F1: 0.981</span>
+</div>
+<div class="mt-3 w-full h-7 flex items-center">
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 98.4%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. MAIN CONTENT GRID (2/3 + 1/3) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN (8 cols / 2/3 width) -->
+<div class="xl:col-span-8 flex flex-col space-y-gutter-desktop">
+<!-- CLASSIFICATION DISTRIBUTION + SPECTROGRAM PREVIEW (Split Card) -->
+<div class="bg-surface-container-low/90 rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">Diagnostic Partitioning</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Ultrasonic Guided Wave Classification Ratio</h2>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MODE:</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">A0 / S0 Lamb Decomposed</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center">
+<!-- Donut Graphic Visualizer -->
+<div class="md:col-span-5 flex flex-col items-center justify-center relative">
+<div class="relative w-48 h-48">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Healthy Background circle (75.7%) -->
+<circle class="text-surface-container-highest" cx="50" cy="50" fill="none" r="38" stroke="currentColor" stroke-width="12"></circle>
+<!-- Healthy Arc (75.7% -> 238.9 of 314.15) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#00f0ff" stroke-dasharray="238.9 314.15" stroke-dashoffset="0" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Delamination Arc (16.9% -> 53.0) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#ffb4ab" stroke-dasharray="53.0 314.15" stroke-dashoffset="-242" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Micro-Crack Arc (5.3% -> 16.6) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#d0bcff" stroke-dasharray="16.6 314.15" stroke-dashoffset="-298" stroke-linecap="round" stroke-width="12"></circle>
+<!-- High-Velocity Impact (2.1% -> 6.5) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#508eff" stroke-dasharray="6.5 314.15" stroke-dashoffset="-318" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<!-- Center Hub Data -->
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-md text-headline-md text-on-surface font-bold leading-none">1,842</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-1">Total Scans</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">Active Validation Set: 2025-Q1</span>
+</div>
+<!-- Breakdown Legend & Metric Stats -->
+<div class="md:col-span-7 flex flex-col space-y-3">
+<!-- Item: Healthy -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,240,255,0.6)]"></span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">Healthy Plate Matrix</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Baseline Acoustic Signature</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-primary-container font-bold">75.7%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">1,394 Scans</span>
+</div>
+</div>
+<!-- Item: Delamination -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-error shadow-[0_0_8px_rgba(255,180,171,0.5)]"></span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">Sub-Surface Delamination</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ply Interface Debonding</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-error font-bold">16.9%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">312 Scans</span>
+</div>
+</div>
+<!-- Item: Micro-Crack -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim shadow-[0_0_8px_rgba(208,188,255,0.5)]"></span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">Micro-Matrix Crack</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">High-Frequency Attenuation</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-tertiary-fixed-dim font-bold">5.3%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">98 Scans</span>
+</div>
+</div>
+<!-- Item: High-Velocity Impact -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary-container shadow-[0_0_8px_rgba(80,142,255,0.5)]"></span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">High-Velocity Impact</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Barely Visible Impact Damage (BVID)</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-secondary font-bold">2.1%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">38 Scans</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ACTIVE SPECIMEN TELEMETRY & LIVE WAVE DISPERSION SIMULATION -->
+<div class="bg-surface-container-low/90 rounded-xl p-space-lg shadow-xl relative">
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/10 text-primary-container font-mono">SPECIMEN #A22-LAMB</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CFRP Quasi-Isotropic [0/45/90/-45]s</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Live Lamb Wave Propagation Matrix</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-on-surface font-mono">
+              VELOCITY: <span class="text-primary font-bold">5,420 m/s</span>
+</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-on-surface font-mono">
+              BURST: <span class="text-primary-fixed-dim font-bold">ACTUATED (250kHz)</span>
+</span>
+</div>
+</div>
+<!-- Oscilloscope / Dispersion Visualizer Canvas -->
+<div class="relative bg-surface-container-lowest rounded-lg p-space-md overflow-hidden">
+<!-- Background Grid division lines -->
+<div class="absolute inset-0 grid grid-cols-12 grid-rows-6 opacity-20 pointer-events-none">
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-r border-outline-variant/50"></div>
+<div class="border-b border-outline-variant/50"></div>
+</div>
+<!-- Signal Waveform SVG with S0 and A0 Packets -->
+<div class="relative w-full h-44 z-10 flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline text-label-sm font-label-sm">
+<span>+1.00 V (A-Scan TX01 -> RX04)</span>
+<span>TOF Window: 0 - 85.0 μs</span>
+</div>
+<svg class="w-full h-28" fill="none" preserveaspectratio="none" viewbox="0 0 800 120">
+<!-- S0 fast fundamental symmetric mode packet -->
+<path class="drop-shadow-[0_0_6px_rgba(0,240,255,0.7)]" d="M 0 60 L 120 60 Q 140 60, 160 30 T 180 85 T 200 40 T 220 75 T 240 60 L 320 60 Q 340 60, 360 10 T 380 110 T 400 5 T 420 115 T 440 25 T 460 95 T 480 60 L 800 60" stroke="#00f0ff" stroke-linejoin="round" stroke-width="2"></path>
+<!-- Defect reflected echo packet (simulated) -->
+<path d="M 520 60 Q 535 60, 545 45 T 560 75 T 575 52 T 590 60 L 800 60" stroke="#ffb4ab" stroke-dasharray="4 2" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<!-- Coordinate Scale -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm border-t border-outline-variant/30 pt-1">
+<span>0 μs (Burst)</span>
+<span class="text-primary-container font-mono">18.4 μs (S0 Arrival)</span>
+<span class="text-secondary font-mono">36.2 μs (A0 Dispersive)</span>
+<span class="text-error font-mono">54.8 μs (Echo Anomaly)</span>
+<span>85.0 μs (Boundary Reflection)</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Details Strip -->
+<div class="mt-space-md grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Transducer Tx-Rx</span>
+<span class="font-label-md text-label-md text-primary font-bold">PZT-01 → PZT-05</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Group Velocity Cg</span>
+<span class="font-label-md text-label-md text-primary-fixed-dim font-bold">3,120 m/s (A0)</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Attenuation</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">-4.82 dB/m</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Defect Loc (X, Y)</span>
+<span class="font-label-md text-label-md text-error font-bold">245mm, 180mm</span>
+</div>
+</div>
+</div>
+<!-- RECENT ANALYSIS ACTIVITY FEED -->
+<div class="bg-surface-container-low/90 rounded-xl p-space-lg shadow-xl">
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Live Ultrasonic Signal Log</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Recent Specimen Scans</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface text-body-sm hover:bg-surface-container-high transition-colors">
+              Filter: All Tests
+            </button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface text-body-sm hover:bg-surface-container-high transition-colors">
+              Export HDF5
+            </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-lowest/50 rounded-lg">
+<th class="py-2.5 px-space-sm">Specimen ID</th>
+<th class="py-2.5 px-space-sm">Material & Array</th>
+<th class="py-2.5 px-space-sm">Frequency</th>
+<th class="py-2.5 px-space-sm">Classification</th>
+<th class="py-2.5 px-space-sm">Confidence</th>
+<th class="py-2.5 px-space-sm text-right">Inspect</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<!-- Scan Row 1 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-sm font-label-md text-label-md font-semibold text-primary">
+                  CFRP-T700-08
+                  <span class="block font-label-sm text-label-sm text-on-surface-variant font-normal">Scan #4829 // 2m ago</span>
+</td>
+<td class="py-3 px-space-sm text-on-surface">
+                  Unidirectional Toray
+                  <span class="block font-label-sm text-label-sm text-on-surface-variant">8-ch Circular PZT</span>
+</td>
+<td class="py-3 px-space-sm font-label-md text-label-md text-on-surface">
+                  250 kHz
+                  <span class="block font-label-sm text-label-sm text-primary-fixed-dim">S0 Dominated</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary/10 text-primary border border-primary/20">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    HEALTHY BASELINE
+                  </span>
+</td>
+<td class="py-3 px-space-sm font-label-md text-label-md text-on-surface font-semibold">
+                  99.4%
+                </td>
+<td class="py-3 px-space-sm text-right">
+<button class="p-1 rounded hover:bg-surface-container-high text-primary-container transition-colors" title="Review Signal Spectrum">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Scan Row 2 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-sm font-label-md text-label-md font-semibold text-error">
+                  CFRP-M40J-14
+                  <span class="block font-label-sm text-label-sm text-on-surface-variant font-normal">Scan #4828 // 14m ago</span>
+</td>
+<td class="py-3 px-space-sm text-on-surface">
+                  High-Modulus Carbon
+                  <span class="block font-label-sm text-label-sm text-on-surface-variant">16-ch Grid Surface</span>
+</td>
+<td class="py-3 px-space-sm font-label-md text-label-md text-on-surface">
+                  300 kHz
+                  <span class="block font-label-sm text-label-sm text-error">A0 Mode Attenuated</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-error/10 text-error border border-error/20">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+                    DELAMINATION DETECTED
+                  </span>
+</td>
+<td class="py-3 px-space-sm font-label-md text-label-md text-error font-semibold">
+                  98.1%
+                </td>
+<td class="py-3 px-space-sm text-right">
+<button class="p-1 rounded hover:bg-surface-container-high text-error transition-colors" title="Review Defect Coordinates">
+<span class="material-symbols-outlined text-base">location_searching</span>
+</button>
+</td>
+</tr>
+<!-- Scan Row 3 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-sm font-label-md text-label-md font-semibold text-tertiary-fixed-dim">
+                  GLARE-3-5/4
+                  <span class="block font-label-sm text-label-sm text-on-surface-variant font-normal">Scan #4827 // 38m ago</span>
+</td>
+<td class="py-3 px-space-sm text-on-surface">
+                  Glass-Laminate Al
+                  <span class="block font-label-sm text-label-sm text-on-surface-variant">Pitch-Catch Linear</span>
+</td>
+<td class="py-3 px-space-sm font-label-md text-label-md text-on-surface">
+                  180 kHz
+                  <span class="block font-label-sm text-label-sm text-tertiary-fixed-dim">Hybrid Guided</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-tertiary-fixed-dim/10 text-tertiary-fixed-dim border border-tertiary-fixed-dim/20">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                    MICRO-CRACK (FATIGUE)
+                  </span>
+</td>
+<td class="py-3 px-space-sm font-label-md text-label-md text-on-surface font-semibold">
+                  94.8%
+                </td>
+<td class="py-3 px-space-sm text-right">
+<button class="p-1 rounded hover:bg-surface-container-high text-primary-container transition-colors" title="Review Signal Spectrum">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Scan Row 4 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-3 px-space-sm font-label-md text-label-md font-semibold text-secondary">
+                  CFRP-IM7-03
+                  <span class="block font-label-sm text-label-sm text-on-surface-variant font-normal">Scan #4826 // 1h ago</span>
+</td>
+<td class="py-3 px-space-sm text-on-surface">
+                  Intermediate Modulus
+                  <span class="block font-label-sm text-label-sm text-on-surface-variant">8-ch Circular PZT</span>
+</td>
+<td class="py-3 px-space-sm font-label-md text-label-md text-on-surface">
+                  250 kHz
+                  <span class="block font-label-sm text-label-sm text-secondary">Waveform Scrambled</span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-secondary-container/10 text-secondary border border-secondary/20">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    IMPACT DAMAGE (BVID)
+                  </span>
+</td>
+<td class="py-3 px-space-sm font-label-md text-label-md text-on-surface font-semibold">
+                  97.3%
+                </td>
+<td class="py-3 px-space-sm text-right">
+<button class="p-1 rounded hover:bg-surface-container-high text-primary-container transition-colors" title="Review Signal Spectrum">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (4 cols / 1/3 width) -->
+<div class="xl:col-span-4 flex flex-col space-y-gutter-desktop">
+<!-- MODEL SYSTEM HEALTH & INFERENCE ENGINE -->
+<div class="bg-surface-container-low/90 rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-lg">memory</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Inference Engine</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/15 text-primary-container font-mono">ONLINE</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg mt-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface font-medium">Model Deployment</span>
+<span class="font-label-md text-label-md text-primary font-bold">XGB-LambNet v3.2</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Inference Latency</span>
+<span class="font-label-md text-label-md text-primary-fixed-dim font-bold">14.2 ms / sample</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Quantization</span>
+<span class="font-label-md text-label-md text-on-surface">FP16 TensorRT</span>
+</div>
+</div>
+<!-- Telemetry Gauges -->
+<div class="mt-space-md space-y-space-sm">
+<!-- GPU Compute Usage -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">GPU COMPUTE ACCELERATION (NVIDIA RTX A6000)</span>
+<span class="text-primary font-mono">42.8%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all" style="width: 42.8%"></div>
+</div>
+</div>
+<!-- VRAM Memory Load -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">VRAM BUFFER (18.2 / 48.0 GB)</span>
+<span class="text-secondary font-mono">37.9%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full transition-all" style="width: 37.9%"></div>
+</div>
+</div>
+<!-- PZT Buffer FIFO -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface-variant">RING BUFFER HEALTH</span>
+<span class="text-primary-fixed-dim font-mono">0 DROPS</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all" style="width: 100%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- QUICK ACTION CENTER -->
+<div class="bg-surface-container-low/90 rounded-xl p-space-lg shadow-xl relative">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-md flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">bolt</span>
+<span>Quick Action Center</span>
+</h2>
+<div class="flex flex-col space-y-space-sm">
+<!-- Action 1: Run Full Specimen Scan -->
+<button class="w-full group p-space-sm rounded-lg bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-headline-sm text-headline-sm font-semibold flex items-center justify-between shadow-[0_0_16px_rgba(0,240,255,0.25)] hover:scale-[1.01] transition-all" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-xl">sensors</span>
+<span class="font-body-md text-body-md font-bold">Run Full Specimen Scan</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase px-1.5 py-0.5 rounded bg-surface-container-lowest/40 font-mono">F5</span>
+</button>
+<!-- Action 2: DSP Filter Workbench -->
+<button class="w-full p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-between transition-colors" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-lg">tune</span>
+<div class="text-left">
+<span class="font-body-md text-body-md font-medium block">DSP Filter Workbench</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Butterworth Bandpass & Wavelet De-noise</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">chevron_right</span>
+</button>
+<!-- Action 3: Simulate Wave Packet -->
+<button class="w-full p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-between transition-colors" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-lg">waves</span>
+<div class="text-left">
+<span class="font-body-md text-body-md font-medium block">Simulate Wave Packet</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Abaqus Explicit Dynamic Co-Simulation</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">chevron_right</span>
+</button>
+<!-- Action 4: Export Test Log -->
+<button class="w-full p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-between transition-colors" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed-dim text-lg">file_download</span>
+<div class="text-left">
+<span class="font-body-md text-body-md font-medium block">Export Full Test Log</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">FAA Part 25 / MIL-HDBK-17 Compliant</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- LATEST UPLOADED DATASETS -->
+<div class="bg-surface-container-low/90 rounded-xl p-space-lg shadow-xl relative">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Signal Repository</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Latest Ingested Datasets</h2>
+</div>
+<button class="font-label-sm text-label-sm text-primary-container hover:underline">View All</button>
+</div>
+<div class="space-y-space-sm">
+<!-- Dataset Item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-mono font-bold">HDF5</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">run_20250228_T700_delam.h5</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3.8 GB</span>
+</div>
+<div class="mt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>8-Ch PZT Array // 50 MS/s</span>
+<span class="text-primary-fixed-dim">Parsed in 1.4s</span>
+</div>
+</div>
+<!-- Dataset Item 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary font-mono font-bold">CSV</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">sweep_100k_500k_baseline.csv</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">840 MB</span>
+</div>
+<div class="mt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Single Chirp Sweep // 100 MS/s</span>
+<span class="text-primary-fixed-dim">Normalized</span>
+</div>
+</div>
+<!-- Dataset Item 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary font-mono font-bold">HDF5</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">bvid_impact_glare_40J.h5</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1.9 GB</span>
+</div>
+<div class="mt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>16-Ch Cross Array // 50 MS/s</span>
+<span class="text-primary-fixed-dim">Indexed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

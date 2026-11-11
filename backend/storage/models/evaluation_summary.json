@@ -1,0 +1,170 @@
+{
+  "xgb": {
+    "name": "XGBoost-LambWave-Classifier v3.2",
+    "key": "xgb",
+    "accuracy": 95.71,
+    "precision": 100.0,
+    "recall": 100.0,
+    "f1_score": 100.0,
+    "cv_scores": [
+      100.0,
+      100.0,
+      89.29,
+      100.0,
+      89.29
+    ],
+    "confusion_matrix": [
+      [
+        35,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        35,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        35,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        35
+      ]
+    ],
+    "n_samples": 140
+  },
+  "rf": {
+    "name": "Random Forest Ensemble",
+    "key": "rf",
+    "accuracy": 100.0,
+    "precision": 100.0,
+    "recall": 100.0,
+    "f1_score": 100.0,
+    "cv_scores": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "confusion_matrix": [
+      [
+        35,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        35,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        35,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        35
+      ]
+    ],
+    "n_samples": 140
+  },
+  "svm": {
+    "name": "Support Vector Machine (RBF)",
+    "key": "svm",
+    "accuracy": 98.57,
+    "precision": 100.0,
+    "recall": 100.0,
+    "f1_score": 100.0,
+    "cv_scores": [
+      100.0,
+      100.0,
+      96.43,
+      96.43,
+      100.0
+    ],
+    "confusion_matrix": [
+      [
+        35,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        35,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        35,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        35
+      ]
+    ],
+    "n_samples": 140
+  },
+  "knn": {
+    "name": "K-Nearest Neighbors",
+    "key": "knn",
+    "accuracy": 99.29,
+    "precision": 100.0,
+    "recall": 100.0,
+    "f1_score": 100.0,
+    "cv_scores": [
+      100.0,
+      100.0,
+      100.0,
+      96.43,
+      100.0
+    ],
+    "confusion_matrix": [
+      [
+        35,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        35,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        35,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        35
+      ]
+    ],
+    "n_samples": 140
+  }
+}

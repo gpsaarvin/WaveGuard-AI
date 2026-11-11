@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#132033", "inverse-primary": "#006970", "primary-fixed": "#7df4ff", "on-primary-container": "#006970", "tertiary-container": "#e1d2ff", "outline": "#849495", "error-container": "#93000a", "surface-container-high": "#1d2a3e", "secondary-fixed": "#d8e2ff", "on-secondary": "#002e6b", "primary-fixed-dim": "#00dbe9", "on-tertiary-container": "#6d3bd7", "tertiary-fixed-dim": "#d0bcff", "surface-dim": "#061426", "secondary-fixed-dim": "#aec6ff", "secondary-container": "#508eff", "on-secondary-container": "#00275e", "on-background": "#d6e3fe", "on-surface-variant": "#b9cacb", "on-tertiary": "#3c0091", "on-tertiary-fixed": "#23005c", "on-error-container": "#ffdad6", "primary-container": "#00f0ff", "surface": "#061426", "on-error": "#690005", "surface-variant": "#28354a", "on-tertiary-fixed-variant": "#5516be", "background": "#061426", "surface-container-highest": "#28354a", "on-primary-fixed-variant": "#004f54", "secondary": "#aec6ff", "inverse-on-surface": "#243145", "surface-bright": "#2d3a4e", "on-surface": "#d6e3fe", "error": "ffb4ab", "outline-variant": "#3b494b", "tertiary": "#faf3ff", "on-primary": "#00363a", "primary": "#dbfcff", "surface-container-low": "#0e1c2f", "tertiary-fixed": "#e9ddff", "inverse-surface": "#d6e3fe", "on-primary-fixed": "#002022", "on-secondary-fixed": "#001a43", "surface-tint": "#00dbe9", "surface-container-lowest": "#020e21", "on-secondary-fixed-variant": "#004397" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "1rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "display-lg-mobile": ["Inter"], "display-lg": ["Inter"], "headline-lg": ["Inter"], "label-md": ["JetBrains Mono"], "body-sm": ["Inter"], "label-sm": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between backdrop-blur-xl"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between border-b border-outline-variant/30 bg-surface-container-low/40"><div class="flex items-center gap-space-sm"><img alt="WaveGuard AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAISF6HArFg7tRCBJgQPKhOAxXpCNK_ReKIzVfC33a3FuhDIfVHMez0ZyPLBazsHFVBK4IWPc7EC56xeSB6AsVuu6LDeuZxXtAS1VAXF08Fy7I6tTmHYhr2WOpnyMD9zl83lgTeXJE-isx67zpHWrplIjG4WtpyjleB_3RDvZxlJlPgwStQyNNUMYwGhRquihGiU9acHbwTgz-sGtTWL5YL-bFF9a0YCiBrsxHgImnN"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none">WaveGuard AI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Research Platform</span></div></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim border border-primary-fixed-dim/30 tracking-wider">v2.4</span></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-wider px-space-xs">Aero SHM Modules</span></div><nav class="flex flex-col px-space-xs gap-0.5" data-active-classes="bg-surface-container-high text-primary-container border-l-2 border-primary-container font-medium"><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg leading-none">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="plate-visualization" href="#"><span class="material-symbols-outlined text-lg leading-none">layers</span><span>Plate Visualization</span></a><a aria-current="page" class="flex items-center gap-3 px-space-md py-2.5 rounded-lg transition-colors bg-surface-container-high text-primary-container border-l-2 border-primary-container font-medium" data-path="signal-analysis" href="#"><span class="material-symbols-outlined text-lg leading-none">graphic_eq</span><span>Signal Analysis</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="ai-classification" href="#"><span class="material-symbols-outlined text-lg leading-none">model_training</span><span>AI Classification</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="model-evaluation" href="#"><span class="material-symbols-outlined text-lg leading-none">analytics</span><span>Model Evaluation</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dataset-management" href="#"><span class="material-symbols-outlined text-lg leading-none">dataset</span><span>Dataset Management</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="analysis-history" href="#"><span class="material-symbols-outlined text-lg leading-none">history</span><span>Analysis History</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-lg leading-none">description</span><span>Reports</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-lg leading-none">tune</span><span>Settings</span></a></nav></div><div class="flex flex-col border-t border-outline-variant/30 bg-surface-container-low/60"><div class="p-space-sm mx-space-sm my-space-xs rounded bg-surface-container-lowest border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><span class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>SYS NOMINAL</span><span class="font-label-sm text-label-sm text-primary">PZT SYNC</span></div><div class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between"><span>GPU INFERENCE</span><span class="text-primary-fixed-dim">ONLINE (0.8ms)</span></div></div><div class="px-space-md py-3 flex items-center justify-between border-t border-outline-variant/20"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0e7r93DvGvrBtkrsQv3aqYdi5UUyUubYN6TaWLuSmTjzFAIm57Xzm2npMqrqb1BCnP6zQwjx11KUVX5i2DrjtYlKkoo3eUvuA0IJSI0QrwS5OZEMc4J21aWoRZEfd9x2aCuv0F6NqLi-A4NoPPwZRZO4odP7zLuluqsjG17vLqjEHz_GprL-xvVALxKdIYMobPWuoagmpYXnYr_wElEZXS_50gbJUl-hdKBpUeEQ"/><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-surface font-semibold leading-snug">Dr. A. Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Researcher</span></div></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant border border-outline-variant/40">LAB-04</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary-container text-lg">radar</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-medium">CFRP-T700-Plate-A22</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/10 text-primary-container border border-primary-container/30 uppercase tracking-wider">Guided Wave Active</span></div><div class="hidden xl:flex items-center gap-space-lg px-space-md py-1 rounded bg-surface-container-low border border-outline-variant/20 font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-1.5"><span>FREQ:</span><span class="text-primary font-semibold">250 kHz</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-1.5"><span>FS:</span><span class="text-primary font-semibold">50 MS/s</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-1.5"><span>ACTUATOR:</span><span class="text-primary-fixed-dim font-semibold">PZT-01 DISC</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface text-body-sm font-body-sm border border-outline-variant/40 transition-colors" type="button"><span class="material-symbols-outlined text-base text-primary-fixed-dim leading-none">sensors</span><span>Acquire</span></button><button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-primary-container hover:bg-primary-fixed text-on-primary-container font-medium text-body-sm font-body-sm transition-all shadow-[0_0_12px_rgba(0,240,255,0.25)]" type="button"><span class="material-symbols-outlined text-base leading-none">summarize</span><span>Report</span></button></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="relative p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl leading-none">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex flex-col items-end pl-1 font-label-sm text-label-sm"><span class="text-on-surface leading-tight font-semibold">14:32:08 UTC</span><span class="text-on-surface-variant text-[9px] uppercase tracking-wider">GPS Locked</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg p-margin-desktop bg-surface min-h-[calc(100vh-4rem)]">
+<!-- Workspace Header & Meta Telemetry Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-xl">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-primary-container text-body-lg">folder_open</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Dataset Record</span>
+<span class="font-label-md text-label-md text-primary font-semibold">CFRP_Run_104_Damaged_PZT.csv</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-body-lg">sensors</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Acquisition Channel</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Ch-04 (PZT-04, 250mm baseline)</span>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-space-sm bg-surface-container-low px-space-md py-2 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-on-surface">50.0 MSPS • 16-BIT ADC</span>
+</div>
+</div>
+<!-- Quick Action Group -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-primary font-label-md text-label-md transition-colors shadow-sm" id="btn-run-fft" type="button">
+<span class="material-symbols-outlined text-base">analytics</span>
+<span>Run FFT Spectrum</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-secondary-fixed font-label-md text-label-md transition-colors shadow-sm" id="btn-hilbert" type="button">
+<span class="material-symbols-outlined text-base">stacked_line_chart</span>
+<span>Compute Hilbert Envelope</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error-container/20 hover:bg-error-container/40 text-on-surface font-label-md text-label-md transition-colors" id="btn-reset" type="button">
+<span class="material-symbols-outlined text-base text-error">restart_alt</span>
+<span>Reset DSP Chain</span>
+</button>
+</div>
+</div>
+<!-- DSP Filter Control Rack -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-body-md">tune</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-wide uppercase">Real-Time DSP Filter Pipeline</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Pipeline Latency: <span class="text-primary-container font-mono">1.24 ms</span></span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm">
+<!-- Filter 1: Bandpass Active -->
+<button class="group relative flex flex-col p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright text-left transition-all shadow-md" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-md text-label-md font-semibold text-primary-container">Bandpass Filter</span>
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00f0ff]"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Butterworth 4th-order</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim font-mono mt-0.5">180 - 320 kHz</span>
+</button>
+<!-- Filter 2: Low-Pass -->
+<button class="flex flex-col p-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-left transition-all" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">Low-Pass Filter</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chebyshev Type II</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5">fc = 450 kHz (-40dB)</span>
+</button>
+<!-- Filter 3: High-Pass -->
+<button class="flex flex-col p-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-left transition-all" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">High-Pass Filter</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bessel Linear Phase</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5">fc = 80 kHz cutoff</span>
+</button>
+<!-- Filter 4: Wavelet Denoising -->
+<button class="flex flex-col p-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-left transition-all" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface-variant">Wavelet Denoising</span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Symlet 8 (Level 5)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5">VisuShrink Soft-Thresh</span>
+</button>
+<!-- Filter 5: Normalize Active -->
+<button class="group relative flex flex-col p-3 rounded-lg bg-surface-container-high hover:bg-surface-bright text-left transition-all shadow-md" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-md text-label-md font-semibold text-primary-container">Normalize Range</span>
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00f0ff]"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Min-Max Scale</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim font-mono mt-0.5">-1.0 to +1.0 V</span>
+</button>
+</div>
+</div>
+<!-- Main Workspace Core: Visualizers + Telemetry HUD -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Left Column: 4-Quadrant Oscilloscope & DSP Matrix -->
+<div class="xl:col-span-9 flex flex-col gap-space-lg">
+<!-- Top Row Graphs (A-Scan Waveforms) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- GRAPH 1: RAW A-SCAN -->
+<div class="relative flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-xl overflow-hidden group">
+<div class="flex items-center justify-between mb-space-sm pb-2 bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md text-primary font-bold tracking-tight">RAW ULTRASONIC A-SCAN WAVEFORM</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-primary-fixed-dim">0 – 200 µs</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-mono text-secondary">±1.0 V</span>
+</div>
+</div>
+<!-- Waveform Canvas Area -->
+<div class="relative w-full h-64 bg-surface-dim rounded-lg overflow-hidden flex items-center justify-center">
+<!-- Grid overlay -->
+<svg class="absolute inset-0 w-full h-full text-surface-container-high" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="24" id="grid1" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 24" fill="none" stroke="currentColor" stroke-dasharray="2,2" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid1)" height="100%" width="100%"></rect>
+<!-- Zero axis line -->
+<line stroke="currentColor" stroke-opacity="0.6" stroke-width="1" x1="0" x2="100%" y1="50%" y2="50%"></line>
+</svg>
+<!-- Annotations & Callouts -->
+<div class="absolute left-[20%] top-4 flex flex-col items-center pointer-events-none">
+<span class="font-label-sm text-label-sm text-primary-container bg-surface-container px-1 rounded shadow">S0 Mode (38.4µs)</span>
+<div class="w-px h-16 bg-primary-container/40"></div>
+</div>
+<div class="absolute left-[38%] top-6 flex flex-col items-center pointer-events-none">
+<span class="font-label-sm text-label-sm text-error bg-surface-container px-1 rounded shadow animate-pulse">Defect Echo (74.2µs)</span>
+<div class="w-px h-14 bg-error/40"></div>
+</div>
+<div class="absolute left-[58%] top-4 flex flex-col items-center pointer-events-none">
+<span class="font-label-sm text-label-sm text-secondary-fixed bg-surface-container px-1 rounded shadow">A0 Mode (116.8µs)</span>
+<div class="w-px h-16 bg-secondary-fixed/40"></div>
+</div>
+<!-- Signal Trace SVG -->
+<svg class="w-full h-full z-10" preserveaspectratio="none" viewbox="0 0 600 240">
+<!-- Direct S0 packet, Defect packet, A0 dispersive wave packet -->
+<path class="drop-shadow-[0_0_8px_rgba(0,240,255,0.6)]" d="
+                  M 0 120
+                  L 80 120
+                  Q 95 120 105 105
+                  Q 115 70 125 165
+                  Q 135 40 145 195
+                  Q 155 75 165 155
+                  Q 175 105 185 120
+                  L 200 120
+                  Q 210 120 218 100
+                  Q 226 75 234 160
+                  Q 242 85 250 150
+                  Q 258 110 266 120
+                  L 310 120
+                  Q 325 120 338 80
+                  Q 352 180 366 30
+                  Q 380 220 394 40
+                  Q 408 200 422 70
+                  Q 436 170 450 100
+                  Q 464 140 480 120
+                  L 600 120
+                " fill="none" stroke="#00f0ff" stroke-width="1.75"></path>
+</svg>
+<!-- Real-time Crosshair Cursor Simulation -->
+<div class="absolute inset-y-0 left-[38%] w-px bg-error-container pointer-events-none"></div>
+<div class="absolute inset-x-0 top-[31%] h-px bg-error-container pointer-events-none"></div>
+</div>
+<!-- Graph Sub-Footer -->
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">
+<span>Time: <span class="text-primary font-mono">0.0 µs</span></span>
+<span>Propagation Baseline: <span class="text-on-surface font-mono">250.0 mm</span></span>
+<span>Time: <span class="text-primary font-mono">200.0 µs</span></span>
+</div>
+</div>
+<!-- GRAPH 2: FILTERED & HILBERT ENVELOPE -->
+<div class="relative flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-xl overflow-hidden group">
+<div class="flex items-center justify-between mb-space-sm pb-2 bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md text-secondary font-bold tracking-tight">FILTERED & HILBERT ENVELOPE</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="w-2 h-0.5 bg-primary-container"></span>BP Filtered
+                </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary-fixed-dim">
+<span class="w-2 h-0.5 bg-tertiary-fixed-dim"></span>Hilbert Envelope
+                </span>
+</div>
+</div>
+<!-- Waveform Canvas Area -->
+<div class="relative w-full h-64 bg-surface-dim rounded-lg overflow-hidden flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full text-surface-container-high" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="24" id="grid2" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 24" fill="none" stroke="currentColor" stroke-dasharray="2,2" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid2)" height="100%" width="100%"></rect>
+<line stroke="currentColor" stroke-opacity="0.6" stroke-width="1" x1="0" x2="100%" y1="50%" y2="50%"></line>
+</svg>
+<!-- Envelope peak highlights -->
+<div class="absolute left-[38%] top-[28%] -translate-x-1/2 -translate-y-1/2 bg-surface-container-high px-1.5 py-0.5 rounded text-on-tertiary-container font-label-sm text-label-sm">
+                Peak: +0.64 V
+              </div>
+<!-- Signal Trace with Hilbert Analytical Envelope -->
+<svg class="w-full h-full z-10" preserveaspectratio="none" viewbox="0 0 600 240">
+<!-- Hilbert Analytic Envelope (Upper & Lower) -->
+<path d="
+                  M 0 120
+                  L 80 120
+                  C 95 120 115 35 145 35
+                  C 175 35 190 120 200 120
+                  C 210 120 226 65 242 65
+                  C 258 65 275 120 310 120
+                  C 335 120 365 20 395 20
+                  C 435 20 460 120 480 120
+                  L 600 120
+                " fill="rgba(208, 188, 255, 0.08)" stroke="#d0bcff" stroke-dasharray="3,3" stroke-width="1.5"></path>
+<path d="
+                  M 0 120
+                  L 80 120
+                  C 95 120 115 205 145 205
+                  C 175 205 190 120 200 120
+                  C 210 120 226 175 242 175
+                  C 258 175 275 120 310 120
+                  C 335 120 365 220 395 220
+                  C 435 220 460 120 480 120
+                  L 600 120
+                " fill="none" opacity="0.6" stroke="#d0bcff" stroke-dasharray="3,3" stroke-width="1.5"></path>
+<!-- Filtered Clean RF Trace -->
+<path d="
+                  M 0 120
+                  L 80 120
+                  Q 95 120 105 108
+                  Q 115 78 125 158
+                  Q 135 48 145 188
+                  Q 155 82 165 150
+                  Q 175 108 185 120
+                  L 200 120
+                  Q 210 120 218 103
+                  Q 226 80 234 155
+                  Q 242 90 250 145
+                  Q 258 112 266 120
+                  L 310 120
+                  Q 325 120 338 85
+                  Q 352 175 366 35
+                  Q 380 215 394 45
+                  Q 408 195 422 75
+                  Q 436 165 450 105
+                  Q 464 138 480 120
+                  L 600 120
+                " fill="none" stroke="#00dbe9" stroke-width="1.75"></path>
+</svg>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">
+<span>Threshold Limit: <span class="text-tertiary-fixed-dim font-mono">0.15 V</span></span>
+<span>Damage Index (DI): <span class="text-error font-mono font-semibold">0.428 (FLAGGED)</span></span>
+<span>TOA Detection: <span class="text-primary font-mono">CFAR Active</span></span>
+</div>
+</div>
+</div>
+<!-- Bottom Row Graphs (Frequency & Time-Frequency) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- GRAPH 3: FFT SPECTRUM -->
+<div class="relative flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-xl overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm pb-2 bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span class="font-label-md text-label-md text-primary font-bold tracking-tight">FAST FOURIER TRANSFORM (FFT) MAGNITUDE</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 rounded bg-surface-container font-mono">
+                Span: 0 – 600 kHz
+              </span>
+</div>
+<!-- FFT Canvas -->
+<div class="relative w-full h-64 bg-surface-dim rounded-lg overflow-hidden flex items-end">
+<svg class="absolute inset-0 w-full h-full text-surface-container-high" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="30" id="grid3" patternunits="userSpaceOnUse" width="50">
+<path d="M 50 0 L 0 0 0 30" fill="none" stroke="currentColor" stroke-dasharray="2,2" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid3)" height="100%" width="100%"></rect>
+</svg>
+<!-- Spectral Peak Annotations -->
+<div class="absolute left-[41.6%] top-6 -translate-x-1/2 flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-primary-container bg-surface-container-high px-2 py-0.5 rounded shadow">
+                  fc = 250 kHz (0 dB)
+                </span>
+<div class="w-px h-28 bg-primary-container/40"></div>
+</div>
+<div class="absolute left-[83.3%] top-24 -translate-x-1/2 flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-2 py-0.5 rounded shadow">
+                  2f = 500 kHz (-28.4 dB)
+                </span>
+<div class="w-px h-16 bg-secondary/40"></div>
+</div>
+<!-- FFT Curve Trace -->
+<svg class="w-full h-full z-10" preserveaspectratio="none" viewbox="0 0 600 240">
+<!-- Base fill under FFT line -->
+<path d="
+                  M 0 230
+                  L 40 228
+                  L 90 225
+                  L 140 220
+                  L 190 200
+                  L 220 140
+                  L 245 25
+                  L 255 30
+                  L 280 160
+                  L 320 210
+                  L 380 218
+                  L 430 215
+                  L 480 180
+                  L 500 135
+                  L 520 195
+                  L 560 225
+                  L 600 230
+                  L 600 240
+                  L 0 240
+                  Z
+                " fill="url(#fft-grad)" opacity="0.35"></path>
+<!-- Main FFT Line Trace -->
+<path class="drop-shadow-[0_0_8px_rgba(125,244,255,0.5)]" d="
+                  M 0 230
+                  L 40 228
+                  L 90 225
+                  L 140 220
+                  L 190 200
+                  L 220 140
+                  L 245 25
+                  L 255 30
+                  L 280 160
+                  L 320 210
+                  L 380 218
+                  L 430 215
+                  L 480 180
+                  L 500 135
+                  L 520 195
+                  L 560 225
+                  L 600 230
+                " fill="none" stroke="#7df4ff" stroke-width="2"></path>
+<defs>
+<lineargradient id="fft-grad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8"></stop>
+<stop offset="100%" stop-color="#061426" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">
+<span>0 kHz</span>
+<span class="text-primary-fixed font-mono font-medium">Harmonic Nonlinearity (β): 1.84 × 10&supmin³</span>
+<span>600 kHz</span>
+</div>
+</div>
+<!-- GRAPH 4: TIME-FREQUENCY SPECTROGRAM -->
+<div class="relative flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-xl overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm pb-2 bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-md text-label-md text-secondary font-bold tracking-tight">TIME-FREQUENCY SPECTROGRAM (STFT/CWT)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Colormap:</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary font-mono">Viridis NDE</span>
+</div>
+</div>
+<!-- Spectrogram Heatmap Representation -->
+<div class="relative w-full h-64 bg-surface-container-lowest rounded-lg overflow-hidden flex items-center justify-center">
+<!-- High-resolution Spectrogram Matrix Simulation via Inline Radial / Linear Energy Gradients -->
+<div class="absolute inset-0 bg-surface-dim"></div>
+<!-- Dispersion Energy Hotspot 1 (S0 mode: low dispersion early arrival) -->
+<div class="absolute left-[20%] top-[45%] w-24 h-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-container/40 blur-xl"></div>
+<div class="absolute left-[20%] top-[45%] w-10 h-8 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/80 blur-sm"></div>
+<!-- Defect Scattering Hotspot at 74.2us, 250kHz -->
+<div class="absolute left-[38%] top-[45%] w-20 h-14 -translate-x-1/2 -translate-y-1/2 rounded-full bg-error/40 blur-lg"></div>
+<div class="absolute left-[38%] top-[45%] w-8 h-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-error-container blur-xs"></div>
+<!-- Dispersive A0 mode branch curve -->
+<div class="absolute left-[60%] top-[45%] w-36 h-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-secondary-container/30 blur-2xl"></div>
+<div class="absolute left-[60%] top-[50%] w-28 h-12 -translate-x-1/2 -translate-y-1/2 rounded-full bg-secondary blur-md"></div>
+<!-- Analytical Dispersion Mode Overlay Lines -->
+<svg class="absolute inset-0 w-full h-full z-10 pointer-events-none" preserveaspectratio="none" viewbox="0 0 600 240">
+<!-- S0 Theoretical Curve -->
+<path d="M 100 110 C 130 110, 180 112, 260 115" fill="none" opacity="0.8" stroke="#00f0ff" stroke-dasharray="4,4" stroke-width="1.5"></path>
+<text fill="#00f0ff" font-family="JetBrains Mono" font-size="10" x="268" y="118">S0</text>
+<!-- A0 Dispersive Curve -->
+<path d="M 120 70 C 220 90, 320 130, 480 160" fill="none" opacity="0.8" stroke="#aec6ff" stroke-dasharray="4,4" stroke-width="1.5"></path>
+<text fill="#aec6ff" font-family="JetBrains Mono" font-size="10" x="488" y="165">A0</text>
+</svg>
+<!-- Colorbar Scale Legend on right edge -->
+<div class="absolute right-2 top-3 bottom-3 w-3 rounded flex flex-col justify-between items-center py-1 bg-gradient-to-t from-surface-dim via-secondary-container to-primary-container">
+<span class="font-label-sm text-[8px] text-surface-dim font-bold">0dB</span>
+<span class="font-label-sm text-[8px] text-on-surface font-bold">-40dB</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">
+<span>Time: <span class="text-on-surface font-mono">0 – 200 µs</span></span>
+<span>Window: <span class="text-secondary font-mono">Hanning (256 pts)</span></span>
+<span>Freq: <span class="text-on-surface font-mono">0 – 500 kHz</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Extracted Acoustic Feature Metrics HUD -->
+<div class="xl:col-span-3 flex flex-col gap-space-md">
+<!-- HUD Container -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-body-lg">memory</span>
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Acoustic Feature HUD</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-container/20 text-primary-container font-mono">LIVE DSP</span>
+</div>
+<!-- Feature 1: Peak-to-Peak -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Peak-to-Peak Amplitude</span>
+<span class="material-symbols-outlined text-sm">show_chart</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md font-bold text-primary font-mono tracking-tight">842.6</span>
+<span class="font-label-md text-label-md text-primary-fixed-dim font-mono">mV</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary-container h-full w-[84%]"></div>
+</div>
+</div>
+<!-- Feature 2: RMS -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Root Mean Square (RMS)</span>
+<span class="material-symbols-outlined text-sm">functions</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface font-mono tracking-tight">218.4</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-mono">mV</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary-container h-full w-[45%]"></div>
+</div>
+</div>
+<!-- Feature 3: SNR -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Signal-to-Noise (SNR)</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim font-bold">NOMINAL</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md font-bold text-primary font-mono tracking-tight">34.8</span>
+<span class="font-label-md text-label-md text-primary-fixed-dim font-mono">dB</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">High signal integrity • Floor -62 dB</span>
+</div>
+<!-- Feature 4: First Arrival Time (ToF) -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">First Arrival Time (ToF)</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">S0 Mode</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md font-bold text-secondary font-mono tracking-tight">38.4</span>
+<span class="font-label-md text-label-md text-secondary-fixed font-mono">µs</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Estimated Cg: 5,420 m/s (CFRP 0°)</span>
+</div>
+<!-- Feature 5: Defect Reflection Delay -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-error">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Defect Reflection Delay</span>
+<span class="material-symbols-outlined text-sm">warning</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md font-bold text-error font-mono tracking-tight">+35.8</span>
+<span class="font-label-md text-label-md text-error font-mono">µs</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Secondary Echo detected @ 74.2 µs</span>
+</div>
+<!-- Feature 6: Attenuation -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase">Energy Attenuation</span>
+<span class="material-symbols-outlined text-sm">trending_down</span>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-md text-headline-md font-bold text-on-surface font-mono tracking-tight">-4.2</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-mono">dB/m</span>
+</div>
+</div>
+<!-- Feature 7: Center Frequency & Moments -->
+<div class="grid grid-cols-2 gap-2">
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Center Freq</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-primary font-mono">250.2</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim font-mono">kHz</span>
+</div>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Kurt / Skew</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface font-mono">3.8 / -0.1</span>
+</div>
+</div>
+</div>
+<!-- Diagnostic Export Actions -->
+<div class="flex flex-col gap-2 pt-2 bg-surface-container-low">
+<button class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary-container font-label-md text-label-md font-semibold transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Export Extracted DSP HDF5</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-base">send_to_mobile</span>
+<span>Dispatch to AI Classifier</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive DSP state handling
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnRunFft = document.getElementById('btn-run-fft');
+    const btnHilbert = document.getElementById('btn-hilbert');
+    const btnReset = document.getElementById('btn-reset');
+
+    if (btnRunFft) {
+      btnRunFft.addEventListener('click', () => {
+        btnRunFft.classList.toggle('bg-primary-container');
+        btnRunFft.classList.toggle('text-on-primary-container');
+      });
+    }
+
+    if (btnHilbert) {
+      btnHilbert.addEventListener('click', () => {
+        btnHilbert.classList.toggle('bg-secondary-container');
+        btnHilbert.classList.toggle('text-on-secondary-container');
+      });
+    }
+
+    if (btnReset) {
+      btnReset.addEventListener('click', () => {
+        alert('DSP Filter pipeline parameters restored to laboratory default (Butterworth 4th, 180-320 kHz).');
+      });
+    }
+  });
+</script></main></div></body></html>

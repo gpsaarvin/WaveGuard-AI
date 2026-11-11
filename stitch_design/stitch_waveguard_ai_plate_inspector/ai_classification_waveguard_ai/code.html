@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#132033", "inverse-primary": "#006970", "primary-fixed": "#7df4ff", "on-primary-container": "#006970", "tertiary-container": "#e1d2ff", "outline": "#849495", "error-container": "#93000a", "surface-container-high": "#1d2a3e", "secondary-fixed": "#d8e2ff", "on-secondary": "#002e6b", "primary-fixed-dim": "#00dbe9", "on-tertiary-container": "#6d3bd7", "tertiary-fixed-dim": "#d0bcff", "surface-dim": "#061426", "secondary-fixed-dim": "#aec6ff", "secondary-container": "#508eff", "on-secondary-container": "#00275e", "on-background": "#d6e3fe", "on-surface-variant": "#b9cacb", "on-tertiary": "#3c0091", "on-tertiary-fixed": "#23005c", "on-error-container": "#ffdad6", "primary-container": "#00f0ff", "surface": "#061426", "on-error": "#690005", "surface-variant": "#28354a", "on-tertiary-fixed-variant": "#5516be", "background": "#061426", "surface-container-highest": "#28354a", "on-primary-fixed-variant": "#004f54", "secondary": "#aec6ff", "inverse-on-surface": "#243145", "surface-bright": "#2d3a4e", "on-surface": "#d6e3fe", "error": "ffb4ab", "outline-variant": "#3b494b", "tertiary": "#faf3ff", "on-primary": "#00363a", "primary": "#dbfcff", "surface-container-low": "#0e1c2f", "tertiary-fixed": "#e9ddff", "inverse-surface": "#d6e3fe", "on-primary-fixed": "#002022", "on-secondary-fixed": "#001a43", "surface-tint": "#00dbe9", "surface-container-lowest": "#020e21", "on-secondary-fixed-variant": "#004397" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "1rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "display-lg-mobile": ["Inter"], "display-lg": ["Inter"], "headline-lg": ["Inter"], "label-md": ["JetBrains Mono"], "body-sm": ["Inter"], "label-sm": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between backdrop-blur-xl"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between border-b border-outline-variant/30 bg-surface-container-low/40"><div class="flex items-center gap-space-sm"><img alt="WaveGuard AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAISF6HArFg7tRCBJgQPKhOAxXpCNK_ReKIzVfC33a3FuhDIfVHMez0ZyPLBazsHFVBK4IWPc7EC56xeSB6AsVuu6LDeuZxXtAS1VAXF08Fy7I6tTmHYhr2WOpnyMD9zl83lgTeXJE-isx67zpHWrplIjG4WtpyjleB_3RDvZxlJlPgwStQyNNUMYwGhRquihGiU9acHbwTgz-sGtTWL5YL-bFF9a0YCiBrsxHgImnN"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none">WaveGuard AI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Research Platform</span></div></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim border border-primary-fixed-dim/30 tracking-wider">v2.4</span></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-wider px-space-xs">Aero SHM Modules</span></div><nav class="flex flex-col px-space-xs gap-0.5" data-active-classes="bg-surface-container-high text-primary-container border-l-2 border-primary-container font-medium"><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg leading-none">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="plate-visualization" href="#"><span class="material-symbols-outlined text-lg leading-none">layers</span><span>Plate Visualization</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="signal-analysis" href="#"><span class="material-symbols-outlined text-lg leading-none">graphic_eq</span><span>Signal Analysis</span></a><a aria-current="page" class="flex items-center gap-3 px-space-md py-2.5 rounded-lg transition-colors bg-surface-container-high text-primary-container border-l-2 border-primary-container font-medium" data-path="ai-classification" href="#"><span class="material-symbols-outlined text-lg leading-none">model_training</span><span>AI Classification</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="model-evaluation" href="#"><span class="material-symbols-outlined text-lg leading-none">analytics</span><span>Model Evaluation</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dataset-management" href="#"><span class="material-symbols-outlined text-lg leading-none">dataset</span><span>Dataset Management</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="analysis-history" href="#"><span class="material-symbols-outlined text-lg leading-none">history</span><span>Analysis History</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-lg leading-none">description</span><span>Reports</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-lg leading-none">tune</span><span>Settings</span></a></nav></div><div class="flex flex-col border-t border-outline-variant/30 bg-surface-container-low/60"><div class="p-space-sm mx-space-sm my-space-xs rounded bg-surface-container-lowest border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><span class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>SYS NOMINAL</span><span class="font-label-sm text-label-sm text-primary">PZT SYNC</span></div><div class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between"><span>GPU INFERENCE</span><span class="text-primary-fixed-dim">ONLINE (0.8ms)</span></div></div><div class="px-space-md py-3 flex items-center justify-between border-t border-outline-variant/20"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0e7r93DvGvrBtkrsQv3aqYdi5UUyUubYN6TaWLuSmTjzFAIm57Xzm2npMqrqb1BCnP6zQwjx11KUVX5i2DrjtYlKkoo3eUvuA0IJSI0QrwS5OZEMc4J21aWoRZEfd9x2aCuv0F6NqLi-A4NoPPwZRZO4odP7zLuluqsjG17vLqjEHz_GprL-xvVALxKdIYMobPWuoagmpYXnYr_wElEZXS_50gbJUl-hdKBpUeEQ"/><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-surface font-semibold leading-snug">Dr. A. Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Researcher</span></div></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant border border-outline-variant/40">LAB-04</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary-container text-lg">radar</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-medium">CFRP-T700-Plate-A22</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/10 text-primary-container border border-primary-container/30 uppercase tracking-wider">Guided Wave Active</span></div><div class="hidden xl:flex items-center gap-space-lg px-space-md py-1 rounded bg-surface-container-low border border-outline-variant/20 font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-1.5"><span>FREQ:</span><span class="text-primary font-semibold">250 kHz</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-1.5"><span>FS:</span><span class="text-primary font-semibold">50 MS/s</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-1.5"><span>ACTUATOR:</span><span class="text-primary-fixed-dim font-semibold">PZT-01 DISC</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface text-body-sm font-body-sm border border-outline-variant/40 transition-colors" type="button"><span class="material-symbols-outlined text-base text-primary-fixed-dim leading-none">sensors</span><span>Acquire</span></button><button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-primary-container hover:bg-primary-fixed text-on-primary-container font-medium text-body-sm font-body-sm transition-all shadow-[0_0_12px_rgba(0,240,255,0.25)]" type="button"><span class="material-symbols-outlined text-base leading-none">summarize</span><span>Report</span></button></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="relative p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl leading-none">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex flex-col items-end pl-1 font-label-sm text-label-sm"><span class="text-on-surface leading-tight font-semibold">14:32:08 UTC</span><span class="text-on-surface-variant text-[9px] uppercase tracking-wider">GPS Locked</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow container -->
+<div class="relative w-full px-gutter-desktop py-space-lg flex flex-col gap-space-lg">
+<div class="absolute -top-12 right-1/4 w-96 h-96 rounded-full bg-primary-container/5 blur-3xl pointer-events-none"></div>
+<div class="absolute top-96 left-10 w-80 h-80 rounded-full bg-secondary-container/5 blur-3xl pointer-events-none"></div>
+<!-- Section 1: Top Configuration & Pipeline Bar -->
+<section class="relative w-full rounded-xl bg-surface-container-low/90 backdrop-blur-xl shadow-md p-space-md flex flex-col xl:flex-row items-start xl:items-center justify-between gap-space-md">
+<!-- Dataset Metadata Block -->
+<div class="flex items-center gap-space-md min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-2xl">memory</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Active Ingestion Pipeline</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container-highest text-primary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+              STREAMING
+            </span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate tracking-tight font-semibold">
+            CFRP_Specimen_Run88_ImpactTest.csv
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">
+            8 Sensor Channels • 10,000 points @ 50 MS/s • Guided Lamb Wave S0/A0
+          </span>
+</div>
+</div>
+<!-- Controls: Model Selector & Large Inference Action -->
+<div class="flex flex-wrap items-center gap-space-md w-full xl:w-auto justify-start xl:justify-end">
+<!-- Model Selection Dropdown -->
+<div class="flex flex-col gap-1 min-w-[280px]">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="modelSelect">
+            Inference Architecture
+          </label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-highest text-on-surface font-label-md text-label-md rounded px-3 py-2 pr-8 focus:outline-none focus:ring-1 focus:ring-primary-container transition-all cursor-pointer" id="modelSelect">
+<option selected="" value="xgb">XGBoost-LambWave-Classifier v3.2 (Optimized Multi-class)</option>
+<option value="cnn">1D-CNN WaveNet (Temporal-Spatial Conv)</option>
+<option value="svm">SVM RBF Kernel (Dispersion Curve Match)</option>
+<option value="rf">Random Forest Ensemble (Tree Depth: 18)</option>
+<option value="mlp">MLP Deep Net (Latent Wavelet Representation)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 pointer-events-none text-on-surface-variant text-base">expand_more</span>
+</div>
+</div>
+<!-- Run Inference CTA Button -->
+<div class="flex items-center gap-2 pt-4 xl:pt-0">
+<button class="group relative flex items-center gap-3 px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary-fixed text-on-primary-container font-headline-sm text-headline-sm font-bold shadow-[0_0_24px_rgba(0,240,255,0.35)] hover:shadow-[0_0_32px_rgba(0,240,255,0.6)] transition-all duration-200" id="runInferenceBtn" type="button">
+<span class="material-symbols-outlined text-xl group-hover:rotate-180 transition-transform duration-500">model_training</span>
+<span>Run AI Classification</span>
+<span class="flex items-center gap-1 ml-1 px-2 py-0.5 rounded bg-surface-container-lowest text-primary-fixed font-label-sm text-label-sm shadow-inner">
+<span class="material-symbols-outlined text-xs">speed</span>
+<span>12.4 ms</span>
+</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 2: Primary Diagnostic Result Banner -->
+<section class="relative w-full rounded-xl bg-surface-container-low/95 backdrop-blur-xl shadow-xl p-space-lg overflow-hidden">
+<!-- Ambient amber warning back-glow for Delamination alert -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg relative z-10">
+<!-- Diagnostic Severity & Name -->
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container/20 text-secondary-fixed font-label-md text-label-md font-bold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+              Critical Diagnostic Flag
+            </span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container-highest text-on-surface-variant font-medium">
+              ISO 9712 NDT Compliant
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed-dim">Predicted Structural Anomaly</span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold text-shadow">
+              DELAMINATION DETECTED
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              Sub-surface Inter-laminar Separation induced by transverse acoustic reflection. Multiple sensor path phase inversions confirmed.
+            </p>
+</div>
+<!-- Severity Badge Strip -->
+<div class="inline-flex items-center gap-2 mt-1 px-3 py-1.5 rounded-lg bg-surface-container-high/80 text-on-surface w-fit">
+<span class="material-symbols-outlined text-secondary-container text-lg">warning</span>
+<span class="font-body-sm text-body-sm font-semibold">Damage Severity Rating:</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-secondary-fixed font-bold tracking-wide">
+              Level 3 - Moderate Acoustic Reflection (Schedule Line Maintenance)
+            </span>
+</div>
+</div>
+<!-- Numerical Confidence & Coordinate Telemetry Cluster -->
+<div class="flex flex-row lg:flex-col sm:flex-row items-end justify-between w-full lg:w-auto gap-space-md bg-surface-container/70 p-space-md rounded-xl shadow-inner min-w-[280px]">
+<!-- Confidence Gauge -->
+<div class="flex flex-col items-start lg:items-end">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Model Confidence</span>
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg font-bold text-primary-container leading-none">96.8</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold">%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Bayesian Posterior P(D|X)</span>
+</div>
+<div class="h-px lg:w-full bg-outline-variant/30 hidden lg:block my-0.5"></div>
+<!-- Spatial Target Matrix -->
+<div class="flex flex-col items-start lg:items-end">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Estimated Defect Center</span>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface font-semibold mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim">QUADRANT Q3</span>
+<span>X: 318mm</span>
+<span class="text-outline">•</span>
+<span>Y: 184mm</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed mt-0.5">Depth: Inter-Ply 6-7 [0.85mm z-axis]</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Grid: Multi-Class Probabilities + Explainability + Spatial Contour Matrix -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column (5 Cols): Probabilities & SHAP Attribution -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Multi-Class Probability Distribution -->
+<div class="rounded-xl bg-surface-container-low/90 backdrop-blur-md p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-lg">stacked_bar_chart</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Multi-Class Probability</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Softmax Vector</span>
+</div>
+<div class="flex flex-col gap-space-sm pt-1">
+<!-- Class 1: Delamination -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+                  Delamination (Sub-surface)
+                </span>
+<span class="text-secondary-fixed font-bold">96.8%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary-container rounded shadow-[0_0_8px_rgba(80,142,255,0.6)]" style="width: 96.8%;"></div>
+</div>
+</div>
+<!-- Class 2: High Velocity Impact Damage -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></span>
+                  High-Velocity Impact Damage
+                </span>
+<span class="text-tertiary-fixed-dim font-bold">2.1%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-on-tertiary-container rounded" style="width: 2.1%;"></div>
+</div>
+</div>
+<!-- Class 3: Matrix Micro-Crack -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+                  Matrix Micro-Crack (Transverse)
+                </span>
+<span class="text-error font-bold">0.7%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-error rounded" style="width: 0.7%;"></div>
+</div>
+</div>
+<!-- Class 4: Healthy Baseline -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+                  Healthy / Pristine Baseline
+                </span>
+<span class="text-primary-fixed-dim font-bold">0.4%</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded" style="width: 0.4%;"></div>
+</div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Entropy Divergence: <strong class="text-on-surface">0.084 nats</strong></span>
+<span>Decision Margin: <strong class="text-primary-fixed-dim">+94.7%</strong></span>
+</div>
+</div>
+<!-- AI Feature Explainability (SHAP Values) -->
+<div class="rounded-xl bg-surface-container-low/90 backdrop-blur-md p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed-dim text-lg">insights</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Feature Attribution (SHAP)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim font-bold">Δ Log-Odds Impact</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Key physical acoustic indicators driving the positive classification threshold for sub-surface ply detachment:
+          </p>
+<div class="flex flex-col gap-3">
+<!-- Feature 1 -->
+<div class="flex flex-col gap-1.5 p-2.5 rounded-lg bg-surface-container">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-semibold">A0 Wave Packet Energy Attenuation</span>
+<span class="text-primary-container font-bold">+42.1% SHAP</span>
+</div>
+<div class="w-full h-1.5 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded" style="width: 84%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+                Severe amplitude drop in anti-symmetric flexural mode over 140 mm transmission path.
+              </span>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-col gap-1.5 p-2.5 rounded-lg bg-surface-container">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-semibold">Time-of-Flight (ToF) Phase Shift at Ch-04</span>
+<span class="text-primary-container font-bold">+28.4% SHAP</span>
+</div>
+<div class="w-full h-1.5 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container/80 rounded" style="width: 57%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+                Phase delay Δt = 3.82 μs recorded, matching dispersion velocity drop in broken core.
+              </span>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-col gap-1.5 p-2.5 rounded-lg bg-surface-container">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-semibold">High-Frequency Harmonic Scattering (380 kHz)</span>
+<span class="text-primary-fixed-dim font-bold">+16.2% SHAP</span>
+</div>
+<div class="w-full h-1.5 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-fixed-dim/70 rounded" style="width: 32%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+                Spectral energy transfer caused by non-linear acoustic contact vibro-acoustic breathing.
+              </span>
+</div>
+<!-- Feature 4 -->
+<div class="flex flex-col gap-1.5 p-2.5 rounded-lg bg-surface-container">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-semibold">Waveform Kurtosis & Skewness Drift</span>
+<span class="text-primary-fixed-dim font-bold">+9.8% SHAP</span>
+</div>
+<div class="w-full h-1.5 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-fixed-dim/50 rounded" style="width: 20%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+                Probability density tail deformation in Hilbert transform envelope.
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (7 Cols): Sensor Channel Matrix, 2D Plate Heatmap & Waveform Scrubber -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- 2D Spatial Defect Localization Plate Heatmap -->
+<div class="rounded-xl bg-surface-container-low/90 backdrop-blur-md p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-lg">radar</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sensor Array Defect Localization Map</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface">500 × 500 mm Plate</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary-fixed font-bold">Defect: (318, 184)</span>
+</div>
+</div>
+<!-- Heatmap Canvas Container -->
+<div class="relative w-full aspect-[16/10] bg-surface-container-lowest rounded-lg overflow-hidden flex items-center justify-center p-2 shadow-inner">
+<!-- Carbon Fiber Weave Texture Underlay -->
+<div class="absolute inset-0 opacity-15 bg-[radial-gradient(#849495_1px,transparent_1px)] [background-size:12px_12px]"></div>
+<!-- Spatial coordinate grid lines -->
+<svg class="absolute inset-0 w-full h-full text-outline-variant/30" preserveaspectratio="none" viewbox="0 0 500 500">
+<line stroke="currentColor" stroke-dasharray="2,4" x1="125" x2="125" y1="0" y2="500"></line>
+<line stroke="currentColor" stroke-dasharray="4,4" x1="250" x2="250" y1="0" y2="500"></line>
+<line stroke="currentColor" stroke-dasharray="2,4" x1="375" x2="375" y1="0" y2="500"></line>
+<line stroke="currentColor" stroke-dasharray="2,4" x1="0" x2="500" y1="125" y2="125"></line>
+<line stroke="currentColor" stroke-dasharray="4,4" x1="0" x2="500" y1="250" y2="250"></line>
+<line stroke="currentColor" stroke-dasharray="2,4" x1="0" x2="500" y1="375" y2="375"></line>
+<!-- Quadrant Identifiers -->
+<text fill="#849495" font-family="JetBrains Mono" font-size="12" x="20" y="30">Q1 (0-250, 0-250)</text>
+<text fill="#849495" font-family="JetBrains Mono" font-size="12" x="380" y="30">Q2 (250-500, 0-250)</text>
+<text fill="#849495" font-family="JetBrains Mono" font-size="12" x="20" y="480">Q4 (0-250, 250-500)</text>
+<text fill="#00F0FF" font-family="JetBrains Mono" font-size="12" font-weight="bold" x="375" y="480">Q3 [INSPECTION ZONE]</text>
+<!-- Acoustic Sensing Rays Between PZT-01 (Tx) and PZT-04, PZT-05 (Rx) -->
+<line stroke="#0070F3" stroke-opacity="0.3" stroke-width="1" x1="70" x2="430" y1="70" y2="70"></line>
+<line stroke="#0070F3" stroke-opacity="0.3" stroke-width="1" x1="70" x2="70" y1="70" y2="430"></line>
+<line stroke="#00F0FF" stroke-dasharray="4,2" stroke-width="1.5" x1="70" x2="430" y1="70" y2="430"></line>
+<line stroke="#00F0FF" stroke-opacity="0.4" stroke-width="1" x1="430" x2="70" y1="70" y2="430"></line>
+<line stroke="#508EFF" stroke-dasharray="2,2" stroke-width="1.5" x1="250" x2="318" y1="70" y2="184"></line>
+<line stroke="#508EFF" stroke-dasharray="2,2" stroke-width="1.5" x1="70" x2="318" y1="250" y2="184"></line>
+<!-- Attenuation Contour Ellipses around Defect Coordinate (X:318, Y:184) -->
+<ellipse cx="318" cy="184" fill="#508EFF" fill-opacity="0.08" rx="85" ry="60"></ellipse>
+<ellipse cx="318" cy="184" fill="#508EFF" fill-opacity="0.18" rx="55" ry="40"></ellipse>
+<ellipse cx="318" cy="184" fill="#508EFF" fill-opacity="0.35" rx="30" ry="22"></ellipse>
+<circle cx="318" cy="184" fill="#508EFF" fill-opacity="0.6" r="12"></circle>
+<circle cx="318" cy="184" fill="#DBFCFF" r="4"></circle>
+<!-- Active PZT Transducers (8 Channels Circular Perimeter) -->
+<!-- CH-01 (Tx Actuator) -->
+<circle cx="70" cy="70" fill="#00dbe9" r="9"></circle>
+<circle cx="70" cy="70" fill="none" opacity="0.8" r="14" stroke="#00dbe9" stroke-width="1.5"></circle>
+<text fill="#dbfcff" font-family="JetBrains Mono" font-size="10" font-weight="bold" x="60" y="55">CH-01 (Tx)</text>
+<!-- CH-02 -->
+<circle cx="250" cy="70" fill="#0070F3" r="7"></circle>
+<text fill="#849495" font-family="JetBrains Mono" font-size="10" x="240" y="55">CH-02</text>
+<!-- CH-03 -->
+<circle cx="430" cy="70" fill="#0070F3" r="7"></circle>
+<text fill="#849495" font-family="JetBrains Mono" font-size="10" x="420" y="55">CH-03</text>
+<!-- CH-04 (Severe Damping) -->
+<circle cx="430" cy="250" fill="#508eff" r="8"></circle>
+<circle cx="430" cy="250" fill="none" r="13" stroke="#508eff" stroke-width="1"></circle>
+<text fill="#aec6ff" font-family="JetBrains Mono" font-size="10" font-weight="bold" x="442" y="254">CH-04 [Attn: -14.2dB]</text>
+<!-- CH-05 -->
+<circle cx="430" cy="430" fill="#0070F3" r="7"></circle>
+<text fill="#849495" font-family="JetBrains Mono" font-size="10" x="420" y="450">CH-05</text>
+<!-- CH-06 -->
+<circle cx="250" cy="430" fill="#0070F3" r="7"></circle>
+<text fill="#849495" font-family="JetBrains Mono" font-size="10" x="240" y="450">CH-06</text>
+<!-- CH-07 -->
+<circle cx="70" cy="430" fill="#0070F3" r="7"></circle>
+<text fill="#849495" font-family="JetBrains Mono" font-size="10" x="60" y="450">CH-07</text>
+<!-- CH-08 -->
+<circle cx="70" cy="250" fill="#0070F3" r="7"></circle>
+<text fill="#849495" font-family="JetBrains Mono" font-size="10" x="22" y="254">CH-08</text>
+</svg>
+<!-- Floating Target Crosshair Callout -->
+<div class="absolute top-[32%] right-[32%] flex flex-col items-center pointer-events-none">
+<div class="px-2 py-0.5 rounded bg-surface-container-high/95 text-secondary-fixed border-0 shadow-lg font-label-sm text-label-sm tracking-tight flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span>Focal Core Delamination (Ply 6/7)</span>
+</div>
+</div>
+<!-- Heatmap Intensity Legend -->
+<div class="absolute bottom-2 left-2 flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-high/90 backdrop-blur-sm font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Wave Damping:</span>
+<div class="flex items-center gap-0.5">
+<span class="text-[9px] text-on-surface-variant">0dB</span>
+<div class="w-16 h-2 rounded-sm bg-gradient-to-r from-primary-container via-secondary-container to-surface-variant"></div>
+<span class="text-[9px] text-secondary-fixed">-24dB</span>
+</div>
+</div>
+</div>
+<!-- Channel Cross-Correlation Matrix -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+              8-Channel Cross-Correlation & Residual Loss Matrix
+            </span>
+<div class="grid grid-cols-8 gap-1 font-label-sm text-label-sm text-center">
+<div class="p-1.5 rounded bg-surface-container text-on-surface-variant font-bold">C01</div>
+<div class="p-1.5 rounded bg-surface-container text-on-surface-variant font-bold">C02</div>
+<div class="p-1.5 rounded bg-surface-container text-on-surface-variant font-bold">C03</div>
+<div class="p-1.5 rounded bg-surface-container text-secondary-fixed font-bold">C04</div>
+<div class="p-1.5 rounded bg-surface-container text-on-surface-variant font-bold">C05</div>
+<div class="p-1.5 rounded bg-surface-container text-on-surface-variant font-bold">C06</div>
+<div class="p-1.5 rounded bg-surface-container text-on-surface-variant font-bold">C07</div>
+<div class="p-1.5 rounded bg-surface-container text-on-surface-variant font-bold">C08</div>
+<!-- Metrics for each channel relative to TX -->
+<div class="p-1 rounded bg-surface-container-high text-primary-fixed-dim">1.00</div>
+<div class="p-1 rounded bg-surface-container-high text-on-surface">0.89</div>
+<div class="p-1 rounded bg-surface-container-high text-on-surface">0.82</div>
+<!-- Channel 4 heavily affected -->
+<div class="p-1 rounded bg-secondary-container/30 text-secondary-fixed font-bold">0.34*</div>
+<div class="p-1 rounded bg-surface-container-high text-on-surface">0.68</div>
+<div class="p-1 rounded bg-surface-container-high text-on-surface">0.79</div>
+<div class="p-1 rounded bg-surface-container-high text-on-surface">0.91</div>
+<div class="p-1 rounded bg-surface-container-high text-on-surface">0.88</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 italic">
+              *Sensor Path Tx:01 → Rx:04 exhibits anomalous acoustic energy dissipation across composite ply boundaries.
+            </span>
+</div>
+<!-- Bottom Action Buttons Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-2">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-medium transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-base text-primary-fixed-dim">compare</span>
+<span>Compare with Healthy Baseline</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-body-sm text-body-sm font-medium transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-base text-secondary-fixed">archive</span>
+<span>Send to Analysis History</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-secondary-container hover:bg-secondary-container/90 text-on-secondary-container font-headline-sm text-headline-sm font-bold shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-base leading-none">workspace_premium</span>
+<span>Export Inspection Certificate</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic interaction for Model Selection & Inference execution simulation
+  document.getElementById('runInferenceBtn')?.addEventListener('click', function() {
+    const btn = this;
+    const originalText = btn.innerHTML;
+    btn.disabled = true;
+    btn.classList.add('opacity-80');
+    btn.innerHTML = `
+      <span class="material-symbols-outlined text-xl animate-spin">refresh</span>
+      <span>Extracting Wavelets...</span>
+      <span class="ml-1 px-2 py-0.5 rounded bg-surface-container-lowest text-primary-fixed font-label-sm text-label-sm">RUNNING</span>
+    `;
+
+    setTimeout(() => {
+      btn.innerHTML = `
+        <span class="material-symbols-outlined text-xl text-primary">verified</span>
+        <span>Inference Synced</span>
+        <span class="ml-1 px-2 py-0.5 rounded bg-surface-container-lowest text-primary-fixed font-label-sm text-label-sm">11.8 ms</span>
+      `;
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        btn.classList.remove('opacity-80');
+      }, 2000);
+    }, 700);
+  });
+</script></main></div></body></html>

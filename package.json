@@ -1,0 +1,20 @@
+{
+  "name": "waveguard-ai",
+  "version": "2.4.0",
+  "private": true,
+  "description": "WaveGuard AI - Ultrasonic Guided Wave Classification for Carbon Fibre Composite Plates",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "cd frontend && npm run dev",
+    "preview": "cd frontend && npm run preview"
+  },
+  "keywords": [
+    "ultrasonic",
+    "guided-waves",
+    "carbon-fibre",
+    "structural-health-monitoring",
+    "machine-learning"
+  ],
+  "author": "WaveGuard AI Team",
+  "license": "MIT"
+}

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#132033", "inverse-primary": "#006970", "primary-fixed": "#7df4ff", "on-primary-container": "#006970", "tertiary-container": "#e1d2ff", "outline": "#849495", "error-container": "#93000a", "surface-container-high": "#1d2a3e", "secondary-fixed": "#d8e2ff", "on-secondary": "#002e6b", "primary-fixed-dim": "#00dbe9", "on-tertiary-container": "#6d3bd7", "tertiary-fixed-dim": "#d0bcff", "surface-dim": "#061426", "secondary-fixed-dim": "#aec6ff", "secondary-container": "#508eff", "on-secondary-container": "#00275e", "on-background": "#d6e3fe", "on-surface-variant": "#b9cacb", "on-tertiary": "#3c0091", "on-tertiary-fixed": "#23005c", "on-error-container": "#ffdad6", "primary-container": "#00f0ff", "surface": "#061426", "on-error": "#690005", "surface-variant": "#28354a", "on-tertiary-fixed-variant": "#5516be", "background": "#061426", "surface-container-highest": "#28354a", "on-primary-fixed-variant": "#004f54", "secondary": "#aec6ff", "inverse-on-surface": "#243145", "surface-bright": "#2d3a4e", "on-surface": "#d6e3fe", "error": "ffb4ab", "outline-variant": "#3b494b", "tertiary": "#faf3ff", "on-primary": "#00363a", "primary": "#dbfcff", "surface-container-low": "#0e1c2f", "tertiary-fixed": "#e9ddff", "inverse-surface": "#d6e3fe", "on-primary-fixed": "#002022", "on-secondary-fixed": "#001a43", "surface-tint": "#00dbe9", "surface-container-lowest": "#020e21", "on-secondary-fixed-variant": "#004397" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "margin-desktop": "2rem", "space-xl": "2.5rem", "gutter": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "margin": "1rem" }, "fontFamily": { "body-lg": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "display-lg-mobile": ["Inter"], "display-lg": ["Inter"], "headline-lg": ["Inter"], "label-md": ["JetBrains Mono"], "body-sm": ["Inter"], "label-sm": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between backdrop-blur-xl"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between border-b border-outline-variant/30 bg-surface-container-low/40"><div class="flex items-center gap-space-sm"><img alt="WaveGuard AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAISF6HArFg7tRCBJgQPKhOAxXpCNK_ReKIzVfC33a3FuhDIfVHMez0ZyPLBazsHFVBK4IWPc7EC56xeSB6AsVuu6LDeuZxXtAS1VAXF08Fy7I6tTmHYhr2WOpnyMD9zl83lgTeXJE-isx67zpHWrplIjG4WtpyjleB_3RDvZxlJlPgwStQyNNUMYwGhRquihGiU9acHbwTgz-sGtTWL5YL-bFF9a0YCiBrsxHgImnN"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary leading-none">WaveGuard AI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-0.5">Research Platform</span></div></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim border border-primary-fixed-dim/30 tracking-wider">v2.4</span></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-wider px-space-xs">Aero SHM Modules</span></div><nav class="flex flex-col px-space-xs gap-0.5" data-active-classes="bg-surface-container-high text-primary-container border-l-2 border-primary-container font-medium"><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg leading-none">dashboard</span><span>Dashboard</span></a><a aria-current="page" class="flex items-center gap-3 px-space-md py-2.5 rounded-lg transition-colors bg-surface-container-high text-primary-container border-l-2 border-primary-container font-medium" data-path="plate-visualization" href="#"><span class="material-symbols-outlined text-lg leading-none">layers</span><span>Plate Visualization</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="signal-analysis" href="#"><span class="material-symbols-outlined text-lg leading-none">graphic_eq</span><span>Signal Analysis</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="ai-classification" href="#"><span class="material-symbols-outlined text-lg leading-none">model_training</span><span>AI Classification</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="model-evaluation" href="#"><span class="material-symbols-outlined text-lg leading-none">analytics</span><span>Model Evaluation</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dataset-management" href="#"><span class="material-symbols-outlined text-lg leading-none">dataset</span><span>Dataset Management</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="analysis-history" href="#"><span class="material-symbols-outlined text-lg leading-none">history</span><span>Analysis History</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-lg leading-none">description</span><span>Reports</span></a><a class="flex items-center gap-3 px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-lg leading-none">tune</span><span>Settings</span></a></nav></div><div class="flex flex-col border-t border-outline-variant/30 bg-surface-container-low/60"><div class="p-space-sm mx-space-sm my-space-xs rounded bg-surface-container-lowest border border-outline-variant/30"><div class="flex items-center justify-between mb-1.5"><span class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>SYS NOMINAL</span><span class="font-label-sm text-label-sm text-primary">PZT SYNC</span></div><div class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between"><span>GPU INFERENCE</span><span class="text-primary-fixed-dim">ONLINE (0.8ms)</span></div></div><div class="px-space-md py-3 flex items-center justify-between border-t border-outline-variant/20"><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0e7r93DvGvrBtkrsQv3aqYdi5UUyUubYN6TaWLuSmTjzFAIm57Xzm2npMqrqb1BCnP6zQwjx11KUVX5i2DrjtYlKkoo3eUvuA0IJSI0QrwS5OZEMc4J21aWoRZEfd9x2aCuv0F6NqLi-A4NoPPwZRZO4odP7zLuluqsjG17vLqjEHz_GprL-xvVALxKdIYMobPWuoagmpYXnYr_wElEZXS_50gbJUl-hdKBpUeEQ"/><div class="flex flex-col"><span class="font-body-sm text-body-sm text-on-surface font-semibold leading-snug">Dr. A. Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Researcher</span></div></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant border border-outline-variant/40">LAB-04</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary-container text-lg">radar</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-medium">CFRP-T700-Plate-A22</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/10 text-primary-container border border-primary-container/30 uppercase tracking-wider">Guided Wave Active</span></div><div class="hidden xl:flex items-center gap-space-lg px-space-md py-1 rounded bg-surface-container-low border border-outline-variant/20 font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-1.5"><span>FREQ:</span><span class="text-primary font-semibold">250 kHz</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-1.5"><span>FS:</span><span class="text-primary font-semibold">50 MS/s</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-1.5"><span>ACTUATOR:</span><span class="text-primary-fixed-dim font-semibold">PZT-01 DISC</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface text-body-sm font-body-sm border border-outline-variant/40 transition-colors" type="button"><span class="material-symbols-outlined text-base text-primary-fixed-dim leading-none">sensors</span><span>Acquire</span></button><button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-primary-container hover:bg-primary-fixed text-on-primary-container font-medium text-body-sm font-body-sm transition-all shadow-[0_0_12px_rgba(0,240,255,0.25)]" type="button"><span class="material-symbols-outlined text-base leading-none">summarize</span><span>Report</span></button></div><div class="h-5 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="relative p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl leading-none">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="flex flex-col items-end pl-1 font-label-sm text-label-sm"><span class="text-on-surface leading-tight font-semibold">14:32:08 UTC</span><span class="text-on-surface-variant text-[9px] uppercase tracking-wider">GPS Locked</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Specimen & Control Bar -->
+<div class="px-gutter-desktop py-space-sm bg-surface-container-lowest flex flex-wrap items-center justify-between gap-space-md shadow-md relative z-20">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-sm bg-surface-container-high px-space-md py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-xl leading-none">token</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specimen Profile</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">CFRP-Q240</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim">[0/±45/90]s</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">500 × 500 × 3.2 mm</span>
+</div>
+</div>
+</div>
+<div class="h-8 w-px bg-surface-container-highest hidden md:block"></div>
+<!-- View Mode Filter Pills -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-xl shadow-inner gap-1">
+<button class="mode-btn px-3 py-1.5 rounded font-label-md text-label-md font-medium text-on-primary-container bg-primary-container transition-all flex items-center gap-1.5" data-mode="energy" type="button">
+<span class="material-symbols-outlined text-base">waves</span>
+<span>Wave Energy Density</span>
+</button>
+<button class="mode-btn px-3 py-1.5 rounded font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5" data-mode="strain" type="button">
+<span class="material-symbols-outlined text-base">square_foot</span>
+<span>Surface Strain (εxy)</span>
+</button>
+<button class="mode-btn px-3 py-1.5 rounded font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5" data-mode="modes" type="button">
+<span class="material-symbols-outlined text-base">tune</span>
+<span>Lamb Amplitude A₀/S₀</span>
+</button>
+</div>
+</div>
+<!-- 3D Transform Toolbar -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-xl shadow-sm">
+<button class="p-2 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-primary-container transition-colors" id="btn-zoom-in" title="Zoom In" type="button">
+<span class="material-symbols-outlined text-lg leading-none">zoom_in</span>
+</button>
+<button class="p-2 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-primary-container transition-colors" id="btn-zoom-out" title="Zoom Out" type="button">
+<span class="material-symbols-outlined text-lg leading-none">zoom_out</span>
+</button>
+<button class="p-2 rounded bg-surface-container-high text-primary-container hover:bg-surface-container-highest transition-colors" id="btn-rotate" title="Toggle 3D Isometric Orbit" type="button">
+<span class="material-symbols-outlined text-lg leading-none">3d_rotation</span>
+</button>
+<button class="p-2 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" id="btn-reset-view" title="Reset Viewport" type="button">
+<span class="material-symbols-outlined text-lg leading-none">restart_alt</span>
+</button>
+<div class="h-5 w-px bg-surface-container-highest mx-1"></div>
+<button class="px-2 py-1 rounded text-primary-fixed-dim hover:bg-surface-container-high font-label-sm text-label-sm uppercase flex items-center gap-1" id="btn-grid-toggle" type="button">
+<span class="material-symbols-outlined text-sm leading-none">grid_4x4</span>
+<span>Grid 50mm</span>
+</button>
+</div>
+</div>
+<!-- Main Viewport and Side Panels Grid -->
+<div class="p-gutter-desktop grid grid-cols-12 gap-gutter-desktop">
+<!-- Defect Simulation Condition Switcher Banner -->
+<div class="col-span-12 flex flex-wrap items-center justify-between gap-space-md p-space-md bg-surface-container-low rounded-xl shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_#00f0ff]"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-wider">STATE INJECTION:</span>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="defect-filter-btn px-3 py-1 rounded-lg font-label-md text-label-md transition-all bg-surface-container-high text-on-surface-variant hover:text-on-surface" data-defect="healthy" type="button">
+            Show Healthy Baseline
+          </button>
+<button class="defect-filter-btn px-3 py-1 rounded-lg font-label-md text-label-md transition-all bg-surface-container-highest text-secondary-container shadow-sm ring-1 ring-secondary-container" data-defect="all" type="button">
+            Dual Anomaly (Default)
+          </button>
+<button class="defect-filter-btn px-3 py-1 rounded-lg font-label-md text-label-md transition-all bg-surface-container-high text-on-surface-variant hover:text-secondary-fixed-dim" data-defect="delam" type="button">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-fixed-dim mr-1.5"></span>Sub-surface Delamination
+          </button>
+<button class="defect-filter-btn px-3 py-1 rounded-lg font-label-md text-label-md transition-all bg-surface-container-high text-on-surface-variant hover:text-error" data-defect="crack" type="button">
+<span class="inline-block w-2 h-2 rounded-full bg-error mr-1.5"></span>Matrix Micro-Crack
+          </button>
+<button class="defect-filter-btn px-3 py-1 rounded-lg font-label-md text-label-md transition-all bg-surface-container-high text-on-surface-variant hover:text-tertiary-fixed" data-defect="bvid" type="button">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary-fixed-dim mr-1.5"></span>BVID (Barely Visible)
+          </button>
+</div>
+</div>
+<!-- Ultrasonic Telemetry Chips -->
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<div class="flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-highest/60 text-on-surface-variant">
+<span>S₀ VELOCITY:</span>
+<span class="text-primary-fixed-dim font-bold">5,420 m/s</span>
+</div>
+<div class="flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-highest/60 text-on-surface-variant">
+<span>A₀ VELOCITY:</span>
+<span class="text-primary-container font-bold">2,180 m/s</span>
+</div>
+<div class="flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-highest/60 text-on-surface-variant">
+<span>ATTENUATION:</span>
+<span class="text-secondary font-bold">0.42 dB/cm</span>
+</div>
+<div class="flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-highest/60 text-on-surface-variant">
+<span>PROPAGATION:</span>
+<span class="text-on-surface font-bold">48.2 μs</span>
+</div>
+</div>
+</div>
+<!-- Center 3D Plate Visualization Arena (Columns 1-8 Desktop) -->
+<div class="col-span-12 xl:col-span-8 flex flex-col gap-space-md">
+<!-- Stage Outer Frame -->
+<div class="relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-xl p-space-md min-h-[580px] flex items-center justify-center select-none" style="perspective: 1200px;">
+<!-- Live HUD Corner Data -->
+<div class="absolute top-4 left-4 z-20 flex flex-col gap-1 pointer-events-none">
+<div class="flex items-center gap-2 bg-surface-container-high/80 backdrop-blur-md px-2.5 py-1 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">LAMB PROPAGATION ENGINE</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container/60 backdrop-blur-sm px-2 py-0.5 rounded">
+            COORDS: [0 - 500 mm] × [0 - 500 mm]
+          </span>
+</div>
+<div class="absolute top-4 right-4 z-20 flex flex-col items-end gap-1 pointer-events-none">
+<div class="bg-surface-container-high/80 backdrop-blur-md px-2.5 py-1 rounded font-label-sm text-label-sm text-on-surface-variant flex items-center gap-2">
+<span>TX/RX ARRAY:</span>
+<span class="text-primary-container font-semibold">1-TX / 8-RX CIRCULAR</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim bg-surface-container/60 px-2 py-0.5 rounded">
+            SAMPLING: 50 MS/s (250 kHz Tone)
+          </span>
+</div>
+<!-- 3D Transformable Plate Wrapper -->
+<div class="relative w-[500px] h-[500px] transition-transform duration-500 ease-out origin-center" id="plate-stage" style="transform: rotateX(24deg) rotateZ(-12deg) scale(0.96);">
+<!-- Plate Base & Carbon Fiber Graphite Layer (Woven pattern visual) -->
+<div class="absolute inset-0 rounded-xl overflow-hidden shadow-2xl bg-[#080d14]">
+<!-- Twill Weave Carbon Texture Background -->
+<div class="absolute inset-0 opacity-80" style="background-image: radial-gradient(circle at 50% 50%, rgba(0,240,255,0.06) 0%, transparent 80%), repeating-linear-gradient(45deg, #09101a 0px, #09101a 2px, #0d1726 2px, #0d1726 4px), repeating-linear-gradient(-45deg, #050a12 0px, #050a12 2px, #111d2e 2px, #111d2e 4px); background-blend-mode: overlay;"></div>
+<!-- Metallic Boundary Clamps (Top, Bottom, Left, Right Edge Clamps) -->
+<div class="absolute top-0 inset-x-0 h-4 bg-surface-container-highest/90 shadow-inner flex justify-around items-center px-4">
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+</div>
+<div class="absolute bottom-0 inset-x-0 h-4 bg-surface-container-highest/90 shadow-inner flex justify-around items-center px-4">
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+</div>
+<div class="absolute left-0 inset-y-0 w-4 bg-surface-container-highest/90 shadow-inner flex flex-col justify-around items-center py-4">
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+</div>
+<div class="absolute right-0 inset-y-0 w-4 bg-surface-container-highest/90 shadow-inner flex flex-col justify-around items-center py-4">
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-outline-variant"></div>
+</div>
+<!-- Coordinate Grid Overlay (50mm divisions) -->
+<svg class="absolute inset-4 w-[468px] h-[468px] opacity-40 pointer-events-none" fill="none" id="plate-grid-svg" viewbox="0 0 500 500">
+<defs>
+<pattern height="50" id="grid50" patternunits="userSpaceOnUse" width="50">
+<path d="M 50 0 L 0 0 0 50" fill="none" stroke="#3b494b" stroke-dasharray="2,2" stroke-width="0.8"></path>
+<circle cx="50" cy="50" fill="#00dbe9" opacity="0.6" r="1"></circle>
+</pattern>
+<radialgradient cx="50%" cy="50%" id="waveGlow" r="50%">
+<stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3"></stop>
+<stop offset="70%" stop-color="#508eff" stop-opacity="0.08"></stop>
+<stop offset="100%" stop-color="#061426" stop-opacity="0"></stop>
+</radialgradient>
+</defs>
+<rect fill="url(#grid50)" height="500" width="500"></rect>
+<!-- Ray tracing lines from Tx to Rx -->
+<g opacity="0.35" stroke="#00f0ff" stroke-dasharray="3,3" stroke-width="0.5">
+<line x1="250" x2="390" y1="250" y2="250"></line>
+<line x1="250" x2="349" y1="250" y2="349"></line>
+<line x1="250" x2="250" y1="250" y2="390"></line>
+<line x1="250" x2="151" y1="250" y2="349"></line>
+<line x1="250" x2="110" y1="250" y2="250"></line>
+<line x1="250" x2="151" y1="250" y2="151"></line>
+<line x1="250" x2="250" y1="250" y2="110"></line>
+<line x1="250" x2="349" y1="250" y2="151"></line>
+</g>
+<!-- Scatter Field Wave Distortions -->
+<ellipse cx="320" cy="180" fill="#508eff" opacity="0.12" rx="42" ry="32"></ellipse>
+<circle cx="320" cy="180" fill="none" opacity="0.4" r="28" stroke="#aec6ff" stroke-dasharray="2,4" stroke-width="1"></circle>
+</svg>
+<!-- Ultrasonic Concentric Wave Radiations (Actuator Pulse) -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+<div class="w-24 h-24 rounded-full bg-primary-container/10 animate-ping" style="animation-duration: 2.8s;"></div>
+<div class="absolute w-48 h-48 rounded-full border border-primary-container/30 animate-ping" style="animation-duration: 2.8s; animation-delay: 0.6s;"></div>
+<div class="absolute w-80 h-80 rounded-full border border-secondary-container/20 animate-ping" style="animation-duration: 2.8s; animation-delay: 1.2s;"></div>
+<div class="absolute w-[440px] h-[440px] rounded-full border border-primary-fixed-dim/10 animate-ping" style="animation-duration: 2.8s; animation-delay: 1.8s;"></div>
+</div>
+<!-- Central Actuator PZT Transmitter (Tx-01) at Center (250mm, 250mm) -->
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 group cursor-pointer">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-10 h-10 rounded-full bg-primary-container/20 animate-pulse"></span>
+<div class="w-6 h-6 rounded-full bg-primary-container shadow-[0_0_14px_#00f0ff] flex items-center justify-center text-on-primary-container font-label-sm text-label-sm font-bold">
+                  TX
+                </div>
+</div>
+<div class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-90 px-1.5 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm whitespace-nowrap shadow-sm pointer-events-none">
+                Tx-01 (250,250)
+              </div>
+</div>
+<!-- 8 Radial PZT Receivers (Rx-01 to Rx-08) R = 140mm -->
+<!-- Rx-01: 0 deg (390, 250) -->
+<div class="sensor-node absolute z-20 cursor-pointer" data-coords="X: 390mm, Y: 250mm" data-name="Rx-01" data-v="0.84 V" style="left: calc(50% + 140px); top: 50%; transform: translate(-50%, -50%);">
+<div class="w-4 h-4 rounded-full bg-secondary-container shadow-[0_0_8px_#508eff] flex items-center justify-center text-on-secondary-container font-label-sm text-[8px] font-bold">R1</div>
+</div>
+<!-- Rx-02: 45 deg (349, 349) -->
+<div class="sensor-node absolute z-20 cursor-pointer" data-coords="X: 349mm, Y: 349mm" data-name="Rx-02" data-v="0.71 V" style="left: calc(50% + 99px); top: calc(50% + 99px); transform: translate(-50%, -50%);">
+<div class="w-4 h-4 rounded-full bg-secondary-container shadow-[0_0_8px_#508eff] flex items-center justify-center text-on-secondary-container font-label-sm text-[8px] font-bold">R2</div>
+</div>
+<!-- Rx-03: 90 deg (250, 390) -->
+<div class="sensor-node absolute z-20 cursor-pointer" data-coords="X: 250mm, Y: 390mm" data-name="Rx-03" data-v="0.63 V" style="left: 50%; top: calc(50% + 140px); transform: translate(-50%, -50%);">
+<div class="w-4 h-4 rounded-full bg-secondary-container shadow-[0_0_8px_#508eff] flex items-center justify-center text-on-secondary-container font-label-sm text-[8px] font-bold">R3</div>
+</div>
+<!-- Rx-04: 135 deg (151, 349) Near Microcrack -->
+<div class="sensor-node absolute z-20 cursor-pointer" data-coords="X: 151mm, Y: 349mm" data-name="Rx-04" data-v="0.32 V (Attenuated)" style="left: calc(50% - 99px); top: calc(50% + 99px); transform: translate(-50%, -50%);">
+<div class="relative">
+<span class="absolute -inset-1 rounded-full bg-error/40 animate-ping"></span>
+<div class="w-4 h-4 rounded-full bg-error shadow-[0_0_10px_#ffb4ab] flex items-center justify-center text-on-error font-label-sm text-[8px] font-bold">R4</div>
+</div>
+</div>
+<!-- Rx-05: 180 deg (110, 250) -->
+<div class="sensor-node absolute z-20 cursor-pointer" data-coords="X: 110mm, Y: 250mm" data-name="Rx-05" data-v="0.79 V" style="left: calc(50% - 140px); top: 50%; transform: translate(-50%, -50%);">
+<div class="w-4 h-4 rounded-full bg-secondary-container shadow-[0_0_8px_#508eff] flex items-center justify-center text-on-secondary-container font-label-sm text-[8px] font-bold">R5</div>
+</div>
+<!-- Rx-06: 225 deg (151, 151) -->
+<div class="sensor-node absolute z-20 cursor-pointer" data-coords="X: 151mm, Y: 151mm" data-name="Rx-06" data-v="0.82 V" style="left: calc(50% - 99px); top: calc(50% - 99px); transform: translate(-50%, -50%);">
+<div class="w-4 h-4 rounded-full bg-secondary-container shadow-[0_0_8px_#508eff] flex items-center justify-center text-on-secondary-container font-label-sm text-[8px] font-bold">R6</div>
+</div>
+<!-- Rx-07: 270 deg (250, 110) -->
+<div class="sensor-node absolute z-20 cursor-pointer" data-coords="X: 250mm, Y: 110mm" data-name="Rx-07" data-v="0.68 V" style="left: 50%; top: calc(50% - 140px); transform: translate(-50%, -50%);">
+<div class="w-4 h-4 rounded-full bg-secondary-container shadow-[0_0_8px_#508eff] flex items-center justify-center text-on-secondary-container font-label-sm text-[8px] font-bold">R7</div>
+</div>
+<!-- Rx-08: 315 deg (349, 151) Near Delamination -->
+<div class="sensor-node absolute z-20 cursor-pointer" data-coords="X: 349mm, Y: 151mm" data-name="Rx-08" data-v="0.41 V (Phase Shift)" style="left: calc(50% + 99px); top: calc(50% - 99px); transform: translate(-50%, -50%);">
+<div class="relative">
+<span class="absolute -inset-1 rounded-full bg-secondary-fixed-dim/40 animate-ping"></span>
+<div class="w-4 h-4 rounded-full bg-secondary-fixed-dim shadow-[0_0_10px_#aec6ff] flex items-center justify-center text-on-secondary font-label-sm text-[8px] font-bold">R8</div>
+</div>
+</div>
+<!-- DEFECT HOTSPOT 1: Delamination at X: 320mm, Y: 180mm (64%, 36%) -->
+<div class="defect-marker absolute cursor-pointer z-30" data-area="24.8 mm²" data-depth="1.6mm (Ply 8-9 Interface)" data-id="DEF-01" data-loc="X: 320mm, Y: 180mm" data-type="Sub-surface Delamination" id="hotspot-delam" style="left: 64%; top: 36%; transform: translate(-50%, -50%);">
+<div class="relative flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed-dim/20 animate-pulse"></div>
+<div class="absolute w-6 h-6 rounded-full bg-secondary-fixed shadow-[0_0_12px_#d8e2ff] flex items-center justify-center text-on-secondary-fixed font-label-sm text-[9px] font-bold">
+                  D1
+                </div>
+<!-- Mini radar dispersion ring around defect -->
+<span class="absolute w-16 h-16 rounded-full border border-secondary-fixed-dim/50 animate-ping" style="animation-duration: 2.2s;"></span>
+</div>
+<div class="absolute -bottom-6 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded bg-surface-container-lowest text-secondary-fixed-dim font-label-sm text-label-sm whitespace-nowrap shadow-md">
+                Delamination [1.6mm]
+              </div>
+</div>
+<!-- DEFECT HOTSPOT 2: Micro-crack at X: 140mm, Y: 390mm (28%, 78%) -->
+<div class="defect-marker absolute cursor-pointer z-30" data-area="12.3 mm²" data-depth="0.8mm (Surface-breaking)" data-id="DEF-02" data-loc="X: 140mm, Y: 390mm" data-type="Matrix Micro-Crack" id="hotspot-crack" style="left: 28%; top: 78%; transform: translate(-50%, -50%);">
+<div class="relative flex items-center justify-center">
+<div class="w-10 h-10 rounded-full bg-error/25 animate-pulse"></div>
+<div class="absolute w-5 h-5 rounded-full bg-error shadow-[0_0_14px_#ffb4ab] flex items-center justify-center text-on-error font-label-sm text-[8px] font-bold">
+                  D2
+                </div>
+<!-- Crack Angle Indicator -->
+<div class="absolute w-8 h-0.5 bg-error rotate-45"></div>
+</div>
+<div class="absolute -bottom-6 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded bg-surface-container-lowest text-error font-label-sm text-label-sm whitespace-nowrap shadow-md">
+                Micro-Crack [45°]
+              </div>
+</div>
+</div>
+<!-- Shadow Base under plate -->
+<div class="absolute -bottom-6 inset-x-8 h-8 bg-black/70 blur-xl rounded-full -z-10"></div>
+</div>
+<!-- Interactive Wavefront Time Scrubber Controller -->
+<div class="absolute bottom-4 inset-x-4 z-20 bg-surface-container-high/90 backdrop-blur-md px-space-md py-space-sm rounded-xl shadow-lg flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:bg-primary-fixed transition-colors shadow-[0_0_8px_rgba(0,240,255,0.3)]" id="btn-play-sim" type="button">
+<span class="material-symbols-outlined text-base leading-none">play_arrow</span>
+</button>
+<button class="w-7 h-7 rounded bg-surface-container-highest text-on-surface hover:text-primary-container flex items-center justify-center transition-colors" id="btn-step-frame" type="button">
+<span class="material-symbols-outlined text-sm leading-none">skip_next</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface font-semibold ml-1">WAVEFRONT PROPAGATION</span>
+</div>
+<div class="flex items-center gap-space-md flex-1 max-w-md mx-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">0 μs</span>
+<input class="w-full h-1.5 bg-surface-container-lowest rounded-lg appearance-none cursor-pointer accent-primary-container focus:outline-none" id="time-scrubber" max="100" min="0" type="range" value="48"/>
+<span class="font-label-sm text-label-sm text-primary font-bold min-w-[50px]" id="time-val-display">48.2 μs</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-primary-fixed-dim">A₀/S₀ DECOMPOSED</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors flex items-center gap-1" id="btn-snapshot" type="button">
+<span class="material-symbols-outlined text-sm leading-none">photo_camera</span>
+<span>Frame</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Ultrasonic Transducer Signal Preview (Bottom Sub-Row of Stage) -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md grid grid-cols-1 md:grid-cols-3 gap-space-md items-center">
+<!-- Waveform Card -->
+<div class="col-span-1 md:col-span-2 flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">ssid_chart</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Actuation Signal Preview</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5-CYCLE HANNING TONE BURST</span>
+</div>
+<!-- Inline Waveform Visual SVG -->
+<div class="w-full h-16 bg-surface-container-lowest rounded-lg p-1.5 flex items-center relative overflow-hidden shadow-inner">
+<svg class="w-full h-full text-primary-container" fill="none" preserveaspectratio="none" viewbox="0 0 400 60">
+<!-- Grid line center -->
+<line stroke="#1d2a3e" stroke-width="1" x1="0" x2="400" y1="30" y2="30"></line>
+<!-- Tone burst 5-cycle curve -->
+<path d="M 0,30 L 70,30 
+                       C 90,30 100,24 110,18 C 120,12 125,48 135,42
+                       C 145,36 150,6 160,8 C 170,10 175,52 185,50
+                       C 195,48 200,2 210,4 C 220,6 225,56 235,54
+                       C 245,52 250,14 260,16 C 270,18 275,44 285,40
+                       C 295,36 300,26 310,30 L 400,30" stroke="currentColor" stroke-linecap="round" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<!-- Envelope Fill -->
+<path d="M 70,30 Q 210,-10 310,30 Q 210,70 70,30 Z" fill="#00f0ff" opacity="0.08"></path>
+</svg>
+<span class="absolute right-2 bottom-1 font-label-sm text-label-sm text-on-surface-variant font-mono">fc: 250.0 kHz | Vpp: 90V</span>
+</div>
+</div>
+<!-- Quick Transducer Switcher -->
+<div class="flex flex-col gap-1.5 bg-surface-container p-2.5 rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Array Frequency Mode</span>
+<div class="grid grid-cols-3 gap-1">
+<button class="freq-btn py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors" data-freq="100" type="button">100 kHz</button>
+<button class="freq-btn py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-sm" data-freq="250" type="button">250 kHz</button>
+<button class="freq-btn py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors" data-freq="350" type="button">350 kHz</button>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Lamb S₀/A₀ Separation:</span>
+<span class="text-primary-fixed-dim font-bold">Optimal @ 250kHz</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side Inspection & Specimen Configuration (Columns 9-12 Desktop) -->
+<div class="col-span-12 xl:col-span-4 flex flex-col gap-space-md">
+<!-- Active Defect Inspector Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-xl">biotech</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Defect Coordinate Inspector</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-fixed-dim/20 text-secondary-fixed-dim font-semibold" id="defect-status-badge">CRITICAL</span>
+</div>
+<!-- Defect Details Details Box -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-2 shadow-inner">
+<div class="flex items-center justify-between pb-1 border-b border-surface-container-highest/40">
+<span class="font-body-md text-body-md text-on-surface font-medium" id="defect-title">Sub-surface Delamination (DEF-01)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="defect-depth">Depth: 1.6 mm</span>
+</div>
+<div class="grid grid-cols-2 gap-2 font-label-sm text-label-sm pt-1">
+<div class="flex flex-col bg-surface-container-high p-2 rounded">
+<span class="text-on-surface-variant">COORDINATES</span>
+<span class="text-on-surface font-bold text-label-md" id="defect-coords">X: 320 mm | Y: 180 mm</span>
+</div>
+<div class="flex flex-col bg-surface-container-high p-2 rounded">
+<span class="text-on-surface-variant">DAMAGE AREA</span>
+<span class="text-secondary-fixed-dim font-bold text-label-md" id="defect-area">24.8 mm²</span>
+</div>
+<div class="flex flex-col bg-surface-container-high p-2 rounded">
+<span class="text-on-surface-variant">SEVERITY INDEX</span>
+<span class="text-error font-bold text-label-md" id="defect-sdi">18.4% SDI</span>
+</div>
+<div class="flex flex-col bg-surface-container-high p-2 rounded">
+<span class="text-on-surface-variant">AFFECTED SENSORS</span>
+<span class="text-primary-fixed-dim font-bold text-label-md" id="defect-sensors">Rx-08, Rx-01, Rx-02</span>
+</div>
+</div>
+</div>
+<!-- Structural Health Bar Metric -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Plate Global Integrity Index</span>
+<span class="text-primary-fixed-dim font-bold">81.6% Healthy</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-primary-container via-secondary-container to-secondary-fixed-dim w-[81.6%]"></div>
+</div>
+</div>
+<!-- Defect Micro-graphic / Sensor Scan Representation -->
+<div class="flex items-center gap-space-sm bg-surface-container p-2 rounded-lg">
+<div class="w-14 h-14 rounded bg-surface-container-lowest shrink-0 overflow-hidden flex items-center justify-center p-1">
+<svg class="w-full h-full text-secondary-fixed-dim" fill="none" viewbox="0 0 40 40">
+<rect fill="#0e1c2f" height="40" rx="4" width="40"></rect>
+<ellipse cx="20" cy="20" fill="#d8e2ff" fill-opacity="0.1" rx="14" ry="9" stroke="currentColor" stroke-dasharray="2,2" stroke-width="1.5"></ellipse>
+<circle cx="20" cy="20" fill="#aec6ff" r="3"></circle>
+<line stroke="#3b494b" stroke-width="0.5" x1="20" x2="20" y1="5" y2="35"></line>
+<line stroke="#3b494b" stroke-width="0.5" x1="5" x2="35" y1="20" y2="20"></line>
+</svg>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">C-Scan Ultrasonic Backscatter</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Echo TOF shift: +1.48 μs relative to intact model</span>
+</div>
+</div>
+</div>
+<!-- Specimen Dimension & Layup Editor Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-xl">layers</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Plate Geometry & Layup</span>
+</div>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary-fixed-dim">EDITABLE</span>
+</div>
+<!-- Composite Ply Stack Representation -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">PLY STACKUP: [0/45/-45/90]2s</span>
+<span class="text-primary font-bold">16 Plies Total</span>
+</div>
+<!-- Graphical Stackup slice -->
+<div class="grid grid-cols-8 gap-0.5 h-3 rounded overflow-hidden">
+<div class="bg-primary-container" title="0° Top Ply"></div>
+<div class="bg-secondary-container" title="45° Ply"></div>
+<div class="bg-primary-fixed-dim" title="-45° Ply"></div>
+<div class="bg-surface-bright" title="90° Ply"></div>
+<div class="bg-surface-bright" title="90° Ply"></div>
+<div class="bg-primary-fixed-dim" title="-45° Ply"></div>
+<div class="bg-secondary-container" title="45° Ply"></div>
+<div class="bg-primary-container" title="0° Bottom Ply"></div>
+</div>
+</div>
+<!-- Sliders for Dimensions -->
+<div class="flex flex-col gap-space-sm">
+<!-- Length Slider -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Length (X-Axis)</span>
+<span class="text-on-surface font-semibold" id="val-length">500 mm</span>
+</div>
+<input class="h-1 bg-surface-container-highest rounded appearance-none accent-primary-container cursor-pointer" max="1000" min="300" step="50" type="range" value="500"/>
+</div>
+<!-- Width Slider -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Width (Y-Axis)</span>
+<span class="text-on-surface font-semibold" id="val-width">500 mm</span>
+</div>
+<input class="h-1 bg-surface-container-highest rounded appearance-none accent-primary-container cursor-pointer" max="1000" min="300" step="50" type="range" value="500"/>
+</div>
+<!-- Thickness Slider -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Plate Thickness (t)</span>
+<span class="text-on-surface font-semibold" id="val-thick">3.2 mm</span>
+</div>
+<input class="h-1 bg-surface-container-highest rounded appearance-none accent-primary-container cursor-pointer" max="8.0" min="1.0" step="0.2" type="range" value="3.2"/>
+</div>
+</div>
+<!-- Composite Material Constants Grid -->
+<div class="grid grid-cols-2 gap-2 font-label-sm text-label-sm bg-surface-container p-2.5 rounded-lg shadow-inner">
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Fiber Volume (Vf):</span>
+<span class="text-primary font-bold">64.5%</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Density (ρ):</span>
+<span class="text-on-surface font-semibold">1,580 kg/m³</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Young's E₁₁:</span>
+<span class="text-on-surface font-semibold">135 GPa</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">Young's E₂₂:</span>
+<span class="text-on-surface font-semibold">9.5 GPa</span>
+</div>
+</div>
+<!-- Update Mesh Geometry Button -->
+<button class="w-full py-2 rounded bg-surface-container-high hover:bg-surface-bright text-primary font-body-md text-body-md font-semibold flex items-center justify-center gap-2 transition-all shadow-sm" id="btn-recompute-mesh" type="button">
+<span class="material-symbols-outlined text-base">refresh</span>
+<span>Recompute Dispersion FE Mesh</span>
+</button>
+</div>
+<!-- Ultrasonic Transducer Array Status Readout -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Transducer Network Telemetry</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">8 RX ACTIVE</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 font-label-sm text-label-sm">
+<div class="p-1.5 rounded bg-surface-container text-center flex flex-col">
+<span class="text-on-surface-variant">Rx-01</span>
+<span class="text-primary-fixed-dim font-bold">0.84V</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container text-center flex flex-col">
+<span class="text-on-surface-variant">Rx-02</span>
+<span class="text-primary-fixed-dim font-bold">0.71V</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container text-center flex flex-col">
+<span class="text-on-surface-variant">Rx-03</span>
+<span class="text-primary-fixed-dim font-bold">0.63V</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container text-center flex flex-col border border-error/30">
+<span class="text-error font-semibold">Rx-04</span>
+<span class="text-error font-bold">0.32V</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container text-center flex flex-col">
+<span class="text-on-surface-variant">Rx-05</span>
+<span class="text-primary-fixed-dim font-bold">0.79V</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container text-center flex flex-col">
+<span class="text-on-surface-variant">Rx-06</span>
+<span class="text-primary-fixed-dim font-bold">0.82V</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container text-center flex flex-col">
+<span class="text-on-surface-variant">Rx-07</span>
+<span class="text-primary-fixed-dim font-bold">0.68V</span>
+</div>
+<div class="p-1.5 rounded bg-surface-container text-center flex flex-col border border-secondary-fixed-dim/30">
+<span class="text-secondary-fixed-dim font-semibold">Rx-08</span>
+<span class="text-secondary-fixed-dim font-bold">0.41V</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Logic -->
+<script>
+    (function initCompositePlateApp() {
+      // Plate 3D Transformation state
+      const plate = document.getElementById('plate-stage');
+      let currentZoom = 0.96;
+      let isRotated = true;
+
+      const btnZoomIn = document.getElementById('btn-zoom-in');
+      const btnZoomOut = document.getElementById('btn-zoom-out');
+      const btnRotate = document.getElementById('btn-rotate');
+      const btnReset = document.getElementById('btn-reset-view');
+      const btnGridToggle = document.getElementById('btn-grid-toggle');
+      const gridSvg = document.getElementById('plate-grid-svg');
+
+      function updateTransform() {
+        if (!plate) return;
+        if (isRotated) {
+          plate.style.transform = `rotateX(24deg) rotateZ(-12deg) scale(${currentZoom})`;
+        } else {
+          plate.style.transform = `rotateX(0deg) rotateZ(0deg) scale(${currentZoom})`;
+        }
+      }
+
+      if (btnZoomIn) {
+        btnZoomIn.addEventListener('click', () => {
+          if (currentZoom < 1.3) currentZoom += 0.08;
+          updateTransform();
+        });
+      }
+
+      if (btnZoomOut) {
+        btnZoomOut.addEventListener('click', () => {
+          if (currentZoom > 0.7) currentZoom -= 0.08;
+          updateTransform();
+        });
+      }
+
+      if (btnRotate) {
+        btnRotate.addEventListener('click', () => {
+          isRotated = !isRotated;
+          btnRotate.classList.toggle('text-primary-container', isRotated);
+          btnRotate.classList.toggle('text-on-surface-variant', !isRotated);
+          updateTransform();
+        });
+      }
+
+      if (btnReset) {
+        btnReset.addEventListener('click', () => {
+          currentZoom = 0.96;
+          isRotated = true;
+          if (btnRotate) btnRotate.classList.add('text-primary-container');
+          updateTransform();
+        });
+      }
+
+      if (btnGridToggle && gridSvg) {
+        btnGridToggle.addEventListener('click', () => {
+          const isHidden = gridSvg.style.display === 'none';
+          gridSvg.style.display = isHidden ? 'block' : 'none';
+          btnGridToggle.classList.toggle('text-primary-fixed-dim', isHidden);
+          btnGridToggle.classList.toggle('text-on-surface-variant', !isHidden);
+        });
+      }
+
+      // Time Scrubber Update
+      const timeScrubber = document.getElementById('time-scrubber');
+      const timeDisplay = document.getElementById('time-val-display');
+      if (timeScrubber && timeDisplay) {
+        timeScrubber.addEventListener('input', (e) => {
+          const val = (parseFloat(e.target.value) * 1.0).toFixed(1);
+          timeDisplay.innerText = `${val} μs`;
+        });
+      }
+
+      // Play / Pause Simulation micro-toggle
+      const btnPlaySim = document.getElementById('btn-play-sim');
+      let simPlaying = false;
+      let simInterval = null;
+      if (btnPlaySim) {
+        btnPlaySim.addEventListener('click', () => {
+          simPlaying = !simPlaying;
+          btnPlaySim.innerHTML = simPlaying 
+            ? '<span class="material-symbols-outlined text-base leading-none">pause</span>'
+            : '<span class="material-symbols-outlined text-base leading-none">play_arrow</span>';
+          
+          if (simPlaying) {
+            simInterval = setInterval(() => {
+              let cur = parseInt(timeScrubber.value, 10);
+              cur = (cur >= 100) ? 0 : cur + 1;
+              timeScrubber.value = cur;
+              timeDisplay.innerText = `${(cur * 1.0).toFixed(1)} μs`;
+            }, 60);
+          } else {
+            clearInterval(simInterval);
+          }
+        });
+      }
+
+      // Defect Hotspots Interactivity & Inspector Mapping
+      const defectCards = document.querySelectorAll('.defect-marker');
+      const defectTitle = document.getElementById('defect-title');
+      const defectDepth = document.getElementById('defect-depth');
+      const defectCoords = document.getElementById('defect-coords');
+      const defectArea = document.getElementById('defect-area');
+      const defectSdi = document.getElementById('defect-sdi');
+      const defectSensors = document.getElementById('defect-sensors');
+      const defectBadge = document.getElementById('defect-status-badge');
+
+      defectCards.forEach(marker => {
+        marker.addEventListener('click', () => {
+          const id = marker.getAttribute('data-id');
+          const type = marker.getAttribute('data-type');
+          const loc = marker.getAttribute('data-loc');
+          const depth = marker.getAttribute('data-depth');
+          const area = marker.getAttribute('data-area');
+
+          if (defectTitle) defectTitle.innerText = `${type} (${id})`;
+          if (defectDepth) defectDepth.innerText = `Depth: ${depth}`;
+          if (defectCoords) defectCoords.innerText = loc;
+          if (defectArea) defectArea.innerText = area;
+
+          if (id === 'DEF-01') {
+            if (defectSdi) defectSdi.innerText = '18.4% SDI';
+            if (defectSensors) defectSensors.innerText = 'Rx-08, Rx-01, Rx-02';
+            if (defectBadge) {
+              defectBadge.innerText = 'CRITICAL';
+              defectBadge.className = 'font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-fixed-dim/20 text-secondary-fixed-dim font-semibold';
+            }
+          } else {
+            if (defectSdi) defectSdi.innerText = '9.2% SDI';
+            if (defectSensors) defectSensors.innerText = 'Rx-04, Rx-05';
+            if (defectBadge) {
+              defectBadge.innerText = 'WARNING';
+              defectBadge.className = 'font-label-sm text-label-sm px-2 py-0.5 rounded bg-error/20 text-error font-semibold';
+            }
+          }
+        });
+      });
+
+      // Defect Filters Banner
+      const defectFilterBtns = document.querySelectorAll('.defect-filter-btn');
+      const hotspotDelam = document.getElementById('hotspot-delam');
+      const hotspotCrack = document.getElementById('hotspot-crack');
+
+      defectFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          defectFilterBtns.forEach(b => {
+            b.classList.remove('bg-surface-container-highest', 'ring-1', 'ring-secondary-container', 'text-secondary-container');
+            b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          });
+
+          btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+          btn.classList.add('bg-surface-container-highest', 'ring-1', 'ring-secondary-container', 'text-secondary-container');
+
+          const mode = btn.getAttribute('data-defect');
+          if (mode === 'healthy') {
+            if (hotspotDelam) hotspotDelam.style.display = 'none';
+            if (hotspotCrack) hotspotCrack.style.display = 'none';
+          } else if (mode === 'delam') {
+            if (hotspotDelam) hotspotDelam.style.display = 'block';
+            if (hotspotCrack) hotspotCrack.style.display = 'none';
+          } else if (mode === 'crack') {
+            if (hotspotDelam) hotspotDelam.style.display = 'none';
+            if (hotspotCrack) hotspotCrack.style.display = 'block';
+          } else {
+            if (hotspotDelam) hotspotDelam.style.display = 'block';
+            if (hotspotCrack) hotspotCrack.style.display = 'block';
+          }
+        });
+      });
+
+      // Frequency switchers
+      const freqBtns = document.querySelectorAll('.freq-btn');
+      freqBtns.forEach(fb => {
+        fb.addEventListener('click', () => {
+          freqBtns.forEach(b => {
+            b.className = 'freq-btn py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors';
+          });
+          fb.className = 'freq-btn py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow-sm';
+        });
+      });
+
+      // View Mode Switchers
+      const modeBtns = document.querySelectorAll('.mode-btn');
+      modeBtns.forEach(mb => {
+        mb.addEventListener('click', () => {
+          modeBtns.forEach(b => {
+            b.className = 'mode-btn px-3 py-1.5 rounded font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-1.5';
+          });
+          mb.className = 'mode-btn px-3 py-1.5 rounded font-label-md text-label-md font-medium text-on-primary-container bg-primary-container transition-all flex items-center gap-1.5';
+        });
+      });
+
+      // Receiver Hover Tooltip
+      const sensorNodes = document.querySelectorAll('.sensor-node');
+      sensorNodes.forEach(node => {
+        node.addEventListener('mouseenter', () => {
+          const name = node.getAttribute('data-name');
+          const v = node.getAttribute('data-v');
+          const coords = node.getAttribute('data-coords');
+          if (defectTitle) defectTitle.innerText = `${name} Transducer Feed`;
+          if (defectCoords) defectCoords.innerText = coords;
+          if (defectDepth) defectDepth.innerText = `Voltage Peak: ${v}`;
+        });
+      });
+
+    })();
+  </script>
+</div></main></div></body></html>
